@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCusToggle"
+    android:layout_width="match_parent"
+    android:layout_height="43dp" 
+    android:background="@color/colorTopic">
+
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:text="标题"
+		android:textColor="@color/colorWhite"
+		android:textSize="16sp"
+		android:visibility="visible"/>
+
+	<View
+		android:id="@+id/verticalDivider"
+		android:visibility="gone"
+		style="@style/searchTypeTabRightDivider" />
+
+	<ImageView
+		android:id="@+id/image_toggle"
+		android:layout_width="@dimen/x10"
+		android:layout_height="@dimen/x10"
+		android:layout_centerVertical="true"
+		android:layout_marginBottom="0dp"
+		android:layout_marginLeft="@dimen/x2"
+		android:layout_toRightOf="@+id/title"
+		/>
+	<View
+        android:id="@+id/v_tab_bottom_divider"
+        style="@style/grayline"
+		android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

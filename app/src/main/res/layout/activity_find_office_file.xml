@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.homework.FindOfficeFileActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <ExpandableListView
+        android:id="@+id/expandlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null"
+        android:dividerHeight="0.5dp">
+    </ExpandableListView>
+</LinearLayout>

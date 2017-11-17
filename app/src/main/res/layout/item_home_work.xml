@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/x8">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x42"
+        android:layout_height="@dimen/x42"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x2"
+        android:background="@drawable/icon_homework"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="@dimen/x120"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_toRightOf="@+id/icon"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="内容："
+        android:textColor="@color/yellowF47"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/j_name"
+        android:layout_width="@dimen/x90"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_toRightOf="@+id/name"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:visibility="visible"/>
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="0dp"
+        android:focusable="false"
+        android:visibility="gone"/>
+
+</RelativeLayout>

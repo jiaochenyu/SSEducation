@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home"
+        android:title="@string/title_home"/>
+
+    <!--<item-->
+    <!--android:id="@+id/navigation_shishuo"-->
+    <!--android:icon="@drawable/icon_gongneng"-->
+    <!--android:title="@string/title_shishuo"/>-->
+    <item
+        android:id="@+id/navigation_class"
+        android:icon="@drawable/icon_gongneng"
+        android:title="@string/title_banji"/>
+
+    <!--<item-->
+    <!--android:id="@+id/navigation_kebiao"-->
+    <!--android:icon="@drawable/icon_kebiao"-->
+    <!--android:title="@string/title_kebiao"/>-->
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/icon_message"
+        android:title="@string/title_message"/>
+
+    <item
+        android:id="@+id/navigation_analysis"
+        android:icon="@drawable/icon_analysis"
+        android:title="@string/title_analysis"/>
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/icon_my"
+        android:title="@string/title_my"/>
+
+</menu>

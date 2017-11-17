@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.homework.SelectReceiverActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <RelativeLayout
+        android:id="@+id/select_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择全部学生"
+            android:textColor="@color/blackText"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_go_right"/>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/grayline"/>
+
+    <com.ss.education.customview.NoScrolExpandablelListView
+        android:id="@+id/exapandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0.5dp"
+        android:groupIndicator="@null">
+    </com.ss.education.customview.NoScrolExpandablelListView>
+
+
+</LinearLayout>

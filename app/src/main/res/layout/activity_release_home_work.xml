@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.homework.ReleaseHomeWorkActivity">
+
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/y5"
+            android:paddingTop="@dimen/y5"
+            >
+
+            <EditText
+                android:id="@+id/home_title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@color/white"
+                android:hint="请输入作业标题"
+                android:maxLength="20"
+                android:paddingBottom="@dimen/x8"
+                android:paddingTop="@dimen/x8"
+                android:textColor="@color/blackText"
+                android:textSize="16sp"
+                />
+
+            <View
+                style="@style/grayline"/>
+
+            <EditText
+                android:id="@+id/home_content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="输入你要布置的作业内容"
+                android:paddingBottom="@dimen/x8"
+                android:paddingTop="@dimen/x8"
+                android:scrollbars="vertical"
+                android:textColor="@color/blackText"
+                android:textSize="16sp"
+                />
+
+            <View
+                style="@style/grayline"/>
+
+            <RelativeLayout
+                android:id="@+id/receive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10">
+
+                <TextView
+                    android:id="@+id/jieshouren_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="1"
+                    android:text="接收人"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x8"
+                    android:layout_toLeftOf="@+id/image_jieshouren"
+                    android:layout_toRightOf="@+id/jieshouren_txt"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/deepTextGray"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/image_jieshouren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/grayline"/>
+
+
+            <com.ss.education.customview.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:horizontalSpacing="0dp"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:paddingBottom="@dimen/x10"
+                android:paddingTop="@dimen/x10"
+                android:verticalSpacing="0dp"
+                >
+
+            </com.ss.education.customview.NoScrollGridView>
+
+            <com.ss.education.customview.NoScrollListView
+                android:id="@+id/voice_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x8"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp">
+
+            </com.ss.education.customview.NoScrollListView>
+
+            <com.ss.education.customview.NoScrollListView
+                android:id="@+id/file_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp">
+
+            </com.ss.education.customview.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10">
+
+                <ImageView
+                    android:id="@+id/img_picbtn"
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/x22"
+                    android:src="@drawable/icon_release_pic"/>
+
+                <ImageView
+                    android:id="@+id/img_voicebtn"
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/x22"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@drawable/icon_mic"/>
+
+                <ImageView
+                    android:id="@+id/img_filebtn"
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/x22"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@drawable/icon_file"/>
+            </LinearLayout>
+
+            <View
+                style="@style/grayline"
+                android:layout_height="@dimen/x5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="1"
+                    android:text="需学生在线提交"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"/>
+
+                <Switch
+                    android:id="@+id/switch_submit_homework"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/grayline"
+                />
+
+            <LinearLayout
+                android:id="@+id/online_submit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/end_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/hw_end_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_weight="1"
+                        android:text="截止日期"
+                        android:textColor="@color/blackText"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/hw_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x8"
+                        android:layout_toLeftOf="@+id/image_hw_end_time"
+                        android:layout_toRightOf="@+id/hw_end_time_txt"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/deepTextGray"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/image_hw_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_go_right"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/grayline"
+                android:layout_height="@dimen/x5"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_weight="1"
+                    android:text="添加解析"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"/>
+
+                <Switch
+                    android:id="@+id/switch_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/grayline"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/analysis_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/analysis_content_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y60"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:hint="输入解析内容"
+                    android:paddingBottom="@dimen/x8"
+                    android:paddingTop="@dimen/x8"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    style="@style/grayline"/>
+
+                <com.ss.education.customview.NoScrollGridView
+                    android:id="@+id/analysis_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingTop="@dimen/x10"
+                    android:verticalSpacing="0dp"
+                    >
+
+                </com.ss.education.customview.NoScrollGridView>
+
+                <com.ss.education.customview.NoScrollListView
+                    android:id="@+id/analysis_voice_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/transparent"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:dividerHeight="0dp">
+
+                </com.ss.education.customview.NoScrollListView>
+
+                <com.ss.education.customview.NoScrollListView
+                    android:id="@+id/analysis_file_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp">
+
+                </com.ss.education.customview.NoScrollListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x8"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10"
+                    android:paddingTop="@dimen/x5">
+
+                    <ImageView
+                        android:id="@+id/analysis_img_picbtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:src="@drawable/icon_pic_blue"/>
+
+                    <ImageView
+                        android:id="@+id/analysis_img_voicebtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:src="@drawable/icon_mic_blue"/>
+
+                    <ImageView
+                        android:id="@+id/analysis_img_filebtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:src="@drawable/icon_file_blue"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/grayline"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_weight="1"
+                        android:text="显示解析"
+                        android:textColor="@color/blackText"
+                        android:textSize="16sp"/>
+
+                    <Switch
+                        android:id="@+id/switch_show_analysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

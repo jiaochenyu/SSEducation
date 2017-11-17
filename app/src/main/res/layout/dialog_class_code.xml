@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_content_view"
+    android:layout_width="@dimen/x254"
+    android:layout_height="@dimen/y80"
+    android:layout_centerInParent="false"
+    android:background="@drawable/bg_textview_small_corner_white"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x10"
+        android:text="班级班号"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:text="123456"
+        android:textColor="@color/yellowF47"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fuzhitextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x5"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="复制"
+            android:textColor="@color/redFE46"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x20"
+            android:id="@+id/yestextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x5"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/yes"
+            android:textColor="@color/colorTopic"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+
+    <!--     <TextView
+             android:id="@+id/one"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/course_common_dialog_bottom_border"
+             android:gravity="center"
+             android:paddingBottom="5dp"
+             android:paddingTop="5dp"
+             android:text="按钮一"
+             android:textColor="@color/wangluopingtaiGoDetailTV"
+             android:textSize="16sp"/>
+
+
+         <TextView
+             android:id="@+id/two"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/one"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="按钮二"
+             android:textSize="16sp"/>-->
+</RelativeLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.GroupManageActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <LinearLayout
+        android:id="@+id/add_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_marginBottom="@dimen/x5"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x10">
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:src="@drawable/icon_add_pic_def"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="添加分组"
+            android:textColor="@color/blackText"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <com.ss.education.customview.dragListView.DragListView
+        android:id="@+id/drag_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#e5e5e5"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"/>
+
+</LinearLayout>

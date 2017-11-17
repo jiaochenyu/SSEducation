@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context=".ui.activity.examination.FinishExamActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:background="@color/colorTopic">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            android:layout_centerInParent="true">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <RelativeLayout
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="95"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/x50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/score"
+                android:layout_centerHorizontal="true"
+                android:text="@string/total_score"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/score"
+                android:layout_toRightOf="@+id/score"
+                android:text="@string/percent"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/x16"/>
+        </RelativeLayout>
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/yuan"/>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueA0bc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/error_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/x10"
+            android:text="错题  9/10道"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y10"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/use_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/x10"
+            android:text="用时  52:00"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/datika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:text="答题卡"
+            android:textColor="@color/grayText"/>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_btn_layout"
+            android:layout_below="@+id/datika"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:listSelector="@color/transparent"
+            android:numColumns="5"
+            android:paddingBottom="@dimen/x8"
+            android:paddingTop="@dimen/x8"
+            android:verticalSpacing="@dimen/x8"
+            >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/bottom_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/colorTopic"/>
+
+            <View
+                android:layout_width="@dimen/x2"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginTop="@dimen/x8"
+                android:background="@color/defaultBackgroundGray"/>
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="再来10题"
+                android:textColor="@color/colorTopic"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

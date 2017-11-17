@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context=".ui.activity.login.RegisterActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:src="@drawable/icon_phone"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="@string/hint_phone"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColor="@color/hintTextGray"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <View
+        style="@style/grayline_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/icon_code"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_code"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/code_edit"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/x13"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/x13"
+            android:layout_toLeftOf="@+id/btn_yanzheng"
+            android:layout_toRightOf="@+id/icon_code"
+            android:background="@null"
+            android:digits="0123456789"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_code"
+            android:lines="1"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:textColor="@color/hintTextGray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/btn_yanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_textview_small_corner_topic_line"
+            android:paddingBottom="@dimen/x8"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:paddingTop="@dimen/x8"
+            android:text="@string/send_phone_code"
+            android:textColor="@color/colorTopic"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:src="@drawable/icon_name"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/realname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="请输入真实姓名"
+            android:lines="1"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/hintTextGray"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/grayline"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:src="@drawable/icon_password_gray"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/hintTextGray"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/grayline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:src="@drawable/icon_password_gray"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/confirm_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="@string/confirm_hint_password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/hintTextGray"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/grayline_margin"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
+
+        <TextView
+            android:id="@+id/juese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="角色"
+            android:textColor="@color/blackText"
+            android:textSize="14sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toRightOf="@+id/juese"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/teacher"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:background="@drawable/rb_bg_checked"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="老师"
+                android:textColor="@color/colorWhite"/>
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_marginLeft="@dimen/x5"
+                android:background="@drawable/rb_bg_checked"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="学生"
+                android:textColor="@color/colorWhite"/>
+
+            <RadioButton
+                android:id="@+id/parent"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_marginLeft="@dimen/x5"
+                android:background="@drawable/rb_bg_checked"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="家长"
+                android:textColor="@color/colorWhite"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/x10"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="选择地区"
+            android:textColor="@color/blackText"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/image_ri"
+            android:text=""
+            android:textColor="@color/blackText"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/image_ri"
+            android:layout_width="@dimen/x14"
+            android:layout_height="@dimen/x14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_go_right"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/bg_textview_small_corner_topic"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        />
+</LinearLayout>

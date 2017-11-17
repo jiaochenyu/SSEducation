@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.parent.SearchParentAndStuActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x5"
+        android:background="@drawable/bg_textview_small_corner_topic_line"
+        android:gravity="center"
+        android:hint="请输入家长手机号"
+        android:inputType="number"
+        android:maxLength="20"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text=""
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35"
+        android:layout_margin="@dimen/x20"
+        android:background="@drawable/bg_textview_big_corner_topic"
+        android:gravity="center"
+        android:text="查找家长"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="家长姓名："
+                android:textColor="@color/blackText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="right"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="@color/blackText"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="家长号码："
+                android:textColor="@color/blackText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="right"
+                android:maxLength="10"
+                android:text="13091617887"
+                android:textColor="@color/blackText"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/bg_textview_big_corner_topic"
+            android:gravity="center"
+            android:text="申请绑定"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+
+</LinearLayout>

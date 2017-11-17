@@ -1,0 +1,37 @@
+{
+  "titles": "发布作业标题",
+  "jztimes": 1509416590000,
+  "remarks": "备注说明",
+  "classid": "d8b20711c6b845cd9f49cc1693cc40fd",
+  "receivetype": "B",
+  "analysis": "解析说明",
+  "showis": "T", //是否显示解析
+
+  "submitis": "T", //学生是否提交答案
+
+  "receives": [
+    {
+      "uuid": "d8b20711c6b845cd9f49cc1693cc40fd"
+    }
+  ],
+  "workfile": [
+    {
+      "file": "upload/661597e38cea44f7bdda09844dc754f9.jpg",
+      "oldname": "玫瑰.jpg"
+    },
+    {
+      "file": "upload/a30e9edfb32943c8af37ead0b231df01.jpg",
+      "oldname": "小狗.jpg"
+    }
+  ],
+  "analysisfile": [
+    {
+      "file": "upload/c43e249cb08c4d7e8d8726aa6a54cedf.jpg",
+      "oldname": "小胖子.jpg"
+    },
+    {
+      "file": "upload/3038f267fba543b98980b421f60c2de7.jpg",
+      "oldname": "小明.jpg"
+    }
+  ]
+}

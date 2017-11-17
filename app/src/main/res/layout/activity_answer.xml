@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context=".ui.activity.examination.AnswerActivity"
+    >
+
+    <include
+        layout="@layout/include_header_countdown"/>
+
+    <LinearLayout
+        android:id="@+id/all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/answer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10"
+            android:text=""
+            android:textColor="@color/blackText"
+            android:textSize="16sp"/>
+
+        <View
+            style="@style/grayline"/>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:focusable="false"
+            android:horizontalSpacing="@dimen/x5"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:visibility="visible"
+            >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bottom_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.ss.education.customview.NoScrollListView
+                            android:id="@+id/listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/blackText"
+                            android:divider="@null"
+                            >
+
+                        </com.ss.education.customview.NoScrollListView>
+                        <!--解析布局-->
+                        <LinearLayout
+                            android:id="@+id/jiexi_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x8"
+                            android:background="@drawable/bg_textview_small_corner_white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/x10"
+                            android:visibility="gone">
+
+                            <View
+                                style="@style/grayline"
+                                android:layout_marginBottom="@dimen/x10"/>
+
+                            <TextView
+                                android:id="@+id/right_answer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="正确答案："
+                                android:textColor="@color/blackText"
+                                android:textSize="16sp"/>
+
+                            <View
+                                style="@style/grayline"
+                                android:layout_marginBottom="@dimen/x10"
+                                android:layout_marginTop="@dimen/x10"/>
+
+                            <TextView
+                                android:id="@+id/analysis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="错误解析："
+                                android:textColor="@color/blackText"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/jiexi_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x5"
+                                android:lineSpacingExtra="@dimen/x3"
+                                android:paddingLeft="@dimen/x5"
+                                android:text=""
+                                android:textColor="@color/blackText"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+                <LinearLayout
+                    android:id="@+id/bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+                    <Button
+                        android:id="@+id/pre_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x40"
+                        android:layout_weight="1"
+                        android:background="@color/colorTopic"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/x1"
+                        android:text="@string/pre_answer"
+                        android:visibility="gone"
+                        android:textColor="@color/white"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/next_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x40"
+                        android:background="@color/colorTopic"
+                        android:gravity="center"
+                        android:text="@string/next_answer"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/big_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/x10"
+        android:scrollbars="vertical"
+        android:text="题目放大"
+        android:textColor="@color/blackText"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

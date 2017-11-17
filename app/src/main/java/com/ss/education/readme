@@ -1,0 +1,23 @@
+偏好设置：
+userInfo : 用户信息
+
+
+
+
+
+
+
+
+
+
+
+
+/// SwipeRefresh 刷新样式
+        mSwipeRefresh.setColorSchemeResources(R.color.colorTopic);
+11-09 15:04:21.898 10845-10845/com.ss.education W/System.err: org.json.JSONException: Value {"feedback":"submit homework    ","evaluate":"","evaluateis":" ","workid":"0a590d000604406e8c3f14455d63905e","userid":"4a014a5279cf4c78847e0a3f08dc5fe5","feedbackfile":[{"file":"upload\/5a29662d663b4b5898490fc043af8b15.JPEG","filename":"5a29662d663b4b5898490fc043af8b15.JPEG","keyname":"file","oldname":"ImageSelector_20171109_015505.JPEG"}],"cztime":"2017-11-09 14:55:38.009","uuid":"85f488634ac04264a3bd4020633783c4","readis":"T","object":{"schoolid":"bf514d9db6034d4c94fc9b317960a643","phone":"","sex":"B","state":"0","vipstate":"1","password":"123456","xjh":"131006412","integral":0,"createtime":"2017-10-19 16:43:02.514","vip":0,"username":"100004","vipintegral":0,"schoolname":"森盛科技","imgpath":"upload\/08c243ccf5ad45d2bfadd290562c1f7b.JPEG","email":"","uuid":"4a014a5279cf4c78847e0a3f08dc5fe5","realname":"付金泉","part":"S","registrationid":"140fe1da9eae6f494ed"},"evaluatefile":[]} at 0 of type org.json.JSONObject cannot be converted to JSONArray
+
+
+推送
+
+type ：：
+LOGOUT  ： 下线通知

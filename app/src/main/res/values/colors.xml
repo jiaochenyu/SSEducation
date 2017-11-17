@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A0CBF0</color>
+    <color name="colorPrimaryDark">#A0CBF0</color>
+    <color name="colorAccent">#A0CBF0</color>
+
+    <color name="defaultBackgroundGray">#F4F4F4</color>
+    <color name="defaultBgBottom">#FEFDFD</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorTopic">#A0CBF0</color>
+
+    <!--黑色-->
+    <color name="colorBlack">#000000</color>
+    <color name="blackText">#494949</color>
+    <color name="black343">#343434</color>
+
+    <!--蓝色-->
+    <color name="deepTopic">#A0B5F0</color>
+    <!--灰色系-->
+    <color name="hintTextGray">#929292</color>
+    <color name="deepTextGray">#626262</color>
+    <color name="grayText">#BABABA</color>
+    <color name="grayBA">#BABABA</color>
+    <color name="grayD8D">#D8D8D8</color>
+    <!--黄色系-->
+    <color name="yellowFD">#FDE775</color>
+    <color name="yellow">#FFF200</color>
+    <color name="yellowF47">#F47023</color>
+    <color name="yellowF9B">#F9B411</color>
+
+    <!--蓝色系-->
+    <color name="blueA0bc">#A0BCF0</color>
+
+    <!--红色系-->
+    <color name="redFE46">#FE4646</color>
+
+    <!--绿色-->
+    <color name="green3B">#32B16C</color>
+
+    <color name="tran1f">#1f000000</color>
+    <color name="colorBlowLabel">#8e8e93</color>
+
+    <!--棕色-->
+    <color name="zong">#544541</color>
+
+</resources>

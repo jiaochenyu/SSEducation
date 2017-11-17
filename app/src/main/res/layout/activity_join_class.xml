@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.JoinClassActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <EditText
+        android:id="@+id/edit_class_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="@dimen/x5"
+        android:background="@drawable/bg_textview_small_corner_topic_line"
+        android:gravity="center"
+        android:hint="请输入班级号"
+        android:inputType="number"
+        android:maxLength="20"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text="请输入老师给您的6位班级号，如123456"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35"
+        android:layout_margin="@dimen/x20"
+        android:background="@drawable/bg_textview_big_corner_topic"
+        android:gravity="center"
+        android:text="查找班级"
+        android:textColor="@color/blackText"/>
+
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:text="查找结果"/>
+
+        <include
+            layout="@layout/item_class"/>
+
+        <TextView
+            android:id="@+id/join_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35"
+            android:layout_marginBottom="@dimen/x8"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x8"
+            android:background="@drawable/bg_textview_big_corner_topic"
+            android:gravity="center"
+            android:text="+加入班级"
+            android:textColor="@color/blackText"/>
+    </LinearLayout>
+
+</LinearLayout>

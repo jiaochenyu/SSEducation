@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_content_view"
+    android:layout_width="@dimen/x254"
+    android:layout_height="@dimen/y100"
+    android:background="@drawable/bg_textview_small_corner_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_weight="1"
+        android:background="@drawable/bg_textview_small_corner_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x20"
+            android:src="@drawable/jieshu"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="添加分组"
+            android:textColor="@color/blackText"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="请输入新的分组名称"
+            android:textColor="@color/blackText"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y20"
+            android:layout_marginBottom="@dimen/x8"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/bg_textview_small_corner_topic_line"
+            android:gravity="left|center"
+            android:hint="请输入分组名称"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/x5"
+            android:textColor="@color/blackText"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/grayline"
+        android:layout_height="0.8dp"
+        android:layout_above="@+id/bottom_button_layout"
+        android:layout_marginBottom="@dimen/x8"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="取消"
+            android:textColor="@color/grayText"/>
+
+        <TextView
+            android:id="@+id/yestextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/yes"
+            android:textColor="@color/colorTopic"
+            />
+    </LinearLayout>
+
+
+    <!--     <TextView
+             android:id="@+id/one"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/course_common_dialog_bottom_border"
+             android:gravity="center"
+             android:paddingBottom="5dp"
+             android:paddingTop="5dp"
+             android:text="按钮一"
+             android:textColor="@color/wangluopingtaiGoDetailTV"
+             android:textSize="16sp"/>
+
+
+         <TextView
+             android:id="@+id/two"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/one"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="按钮二"
+             android:textSize="16sp"/>-->
+</LinearLayout>
+

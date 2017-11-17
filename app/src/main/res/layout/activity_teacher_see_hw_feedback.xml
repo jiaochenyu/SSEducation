@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.classes.homework.TeacherSeeHwFeedbackActivity">
+
+    <include
+        layout="@layout/include_header_topic"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x10"
+            android:paddingTop="@dimen/x10"
+            >
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text=""
+                android:textColor="@color/deepTextGray"
+                android:textSize="18sp"
+                />
+
+
+            <com.ss.education.customview.NoScrollListView
+                android:id="@+id/voice_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                >
+            </com.ss.education.customview.NoScrollListView>
+
+            <com.ss.education.customview.NoScrollListView
+                android:id="@+id/pic_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                >
+            </com.ss.education.customview.NoScrollListView>
+
+            <com.ss.education.customview.NoScrollListView
+                android:id="@+id/file_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:dividerHeight="0dp"
+                >
+            </com.ss.education.customview.NoScrollListView>
+
+            <View
+                style="@style/grayline"
+                android:layout_height="@dimen/x5"/>
+
+
+            <LinearLayout
+                android:id="@+id/submit_homework_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    style="@style/grayline"
+                    android:layout_height="@dimen/x5"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/homeworkboard"/>
+
+                <RelativeLayout
+                    android:id="@+id/submit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/zong"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/submit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_weight="1"
+                        android:text="提交作业"
+                        android:textColor="@color/blackText"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="@dimen/x18"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_go_right"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+                <View
+                    style="@style/grayline"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    />
+
+                <EditText
+                    android:id="@+id/submit_homework_content_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:hint="输入评价"
+                    android:paddingBottom="@dimen/x8"
+                    android:paddingTop="@dimen/x8"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"
+                    />
+
+                <com.ss.education.customview.NoScrollGridView
+                    android:id="@+id/submit_photo_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:paddingBottom="@dimen/x10"
+                    android:paddingTop="@dimen/x10"
+                    android:verticalSpacing="0dp"
+                    >
+
+                </com.ss.education.customview.NoScrollGridView>
+
+                <com.ss.education.customview.NoScrollListView
+                    android:id="@+id/submit_voice_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp">
+
+                </com.ss.education.customview.NoScrollListView>
+
+                <com.ss.education.customview.NoScrollListView
+                    android:id="@+id/submit_file_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp">
+
+                </com.ss.education.customview.NoScrollListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x8"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10">
+
+                    <ImageView
+                        android:id="@+id/img_picbtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:src="@drawable/icon_release_pic"/>
+
+                    <ImageView
+                        android:id="@+id/img_voicebtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:src="@drawable/icon_mic"/>
+
+                    <ImageView
+                        android:id="@+id/img_filebtn"
+                        android:layout_width="@dimen/x22"
+                        android:layout_height="@dimen/x22"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:src="@drawable/icon_file"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/submit_home_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@drawable/bg_textview_big_corner_topic"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

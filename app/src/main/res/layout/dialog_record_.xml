@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_textview_small_corner_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <!--edit-->
+    <com.ss.education.utils.voiceutils.AudioRecordButton
+        android:id="@+id/fav_iv_voicebtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/icon_yuyin_def"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x12"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/pressSpake"
+            android:textColor="@color/colorBlowLabel"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x2"
+            android:text="@string/pressSpakeHint"
+            android:textColor="@color/colorBlowLabel"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>
+

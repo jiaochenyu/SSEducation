@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBackgroundGray"
+    android:orientation="vertical"
+    tools:context="com.ss.education.ui.activity.parent.MyParentActivity">
+
+    <LinearLayout
+        android:id="@+id/jiazhang_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/x10"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="您有一条家长申请"
+                android:textColor="@color/redFE46"
+                android:textSize="14sp"/>
+
+            <View
+                style="@style/grayline"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="家长姓名："
+                android:textColor="@color/blackText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="right"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="@color/blackText"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="@dimen/x10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/phone_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="家长号码："
+                android:textColor="@color/blackText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="right"
+                android:maxLength="10"
+                android:text="13091617887"
+                android:textColor="@color/blackText"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            style="@style/grayline"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x10"
+        android:paddingTop="@dimen/x10">
+
+
+        <TextView
+            android:id="@+id/refuse"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:background="@drawable/circle_gray"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@drawable/circle_topic_big"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/add_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/bg_textview_big_corner_topic"
+        android:gravity="center"
+        android:text="添加家长"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
