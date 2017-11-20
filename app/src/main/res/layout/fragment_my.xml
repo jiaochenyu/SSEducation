@@ -111,269 +111,280 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/userinfo_layout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        >
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/my_userinfo"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
-        <TextView
-            android:id="@+id/userinfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/x3"
-            android:layout_toLeftOf="@+id/go_iv"
-            android:gravity="left"
-            android:singleLine="true"
-            android:text=""
-            android:textColor="@color/grayText"
-            android:textSize="14sp"
-            android:visibility="visible"/>
+            <RelativeLayout
+                android:id="@+id/userinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                >
 
-        <ImageView
-            android:id="@+id/go_iv"
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_userinfo"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
 
-    <RelativeLayout
-        android:id="@+id/search_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        >
+                <TextView
+                    android:id="@+id/userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x3"
+                    android:layout_toLeftOf="@+id/go_iv"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/grayText"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/t_search"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:id="@+id/go_iv"
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/my_teacher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="gone"
-        >
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/my_teacher"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/t_search"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/my_parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="gone"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="@string/my_parent"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/my_child"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="gone"
-        >
+            <RelativeLayout
+                android:id="@+id/my_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="gone"
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="我的孩子"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_teacher"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/my_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="gone"
+                >
 
-    <RelativeLayout
-        android:id="@+id/xitongtongzhi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="visible"
-        >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_parent"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="系统通知"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/fankuijianyi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="visible"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="反馈建议"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/invitation_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="gone"
-        >
+            <RelativeLayout
+                android:id="@+id/my_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="gone"
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="生成邀请码"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="我的孩子"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/sehzhi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10"
-        android:background="@color/colorWhite"
-        android:padding="@dimen/x10"
-        android:visibility="visible"
-        >
+            <RelativeLayout
+                android:id="@+id/xitongtongzhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="visible"
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="设置"
-            android:textColor="@color/blackText"
-            android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="系统通知"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
 
-        <ImageView
-            android:layout_width="@dimen/x14"
-            android:layout_height="@dimen/x14"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon_go_right"
-            />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
 
+
+            <RelativeLayout
+                android:id="@+id/fankuijianyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="反馈建议"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/invitation_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="生成邀请码"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sehzhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/x10"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="设置"
+                    android:textColor="@color/blackText"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_go_right"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

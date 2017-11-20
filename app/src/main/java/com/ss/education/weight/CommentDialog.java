@@ -125,10 +125,10 @@ public class CommentDialog {
             @Override
             public void onClick(View v) {
                 editStr = editText.getText().toString();
-                if (TextUtils.isEmpty(editStr)){
+                if (TextUtils.isEmpty(editStr)) {
                     Toast.makeText(c, "请输入内容！", Toast.LENGTH_SHORT).show();
                     return;
-                }else {
+                } else {
                     dialog.dismiss();
                     mDialogListener.yesClickListener();
                 }
@@ -138,11 +138,48 @@ public class CommentDialog {
         dialog.show();
     }
 
+
     public String getEditStr() {
         return editStr;
     }
 
     public void setEditStr(String editStr) {
         this.editStr = editStr;
+    }
+
+
+    /**
+     * 邀请码
+     *
+     * @param c
+     * @param code
+     */
+    public static void showInvitaionCodeDialog(final Context c, String code, String time) {
+
+        final Dialog dialog = new Dialog(c, R.style.Dialog);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.dialog_invitation_teacher_code);
+        TextView fuzhiTV = (TextView) dialog.findViewById(R.id.fuzhitextview);
+        TextView messageTV = (TextView) dialog.findViewById(R.id.dialog_message);
+        TextView timeTV = (TextView) dialog.findViewById(R.id.dialog_content);
+        messageTV.setText(code);
+        timeTV.setText(time);
+        TextView yesTV = (TextView) dialog.findViewById(R.id.yestextview);
+        yesTV.setText(R.string.yes);
+        yesTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                mDialogListener.yesClickListener();
+            }
+        });
+        fuzhiTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDialogListener.noClickListener();
+            }
+        });
+        dialog.show();
+
     }
 }

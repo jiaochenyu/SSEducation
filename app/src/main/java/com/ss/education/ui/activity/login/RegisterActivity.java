@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -65,12 +66,17 @@ public class RegisterActivity extends BaseActivity {
     EditText mConfirmPasswordEdit;
     @Bind(R.id.realname_edit)
     EditText mRealnameEdit;
+    @Bind(R.id.invitation_code_edit)
+    EditText mInvitationCodeEdit;
+    @Bind(R.id.invitation_ll)
+    LinearLayout mInvitaionLL;
 
     String code = "";
     String phone = "";
     String pass = "";
     String comfirmPass = "";
     String mRealname = "";
+    String mInvitaionCode = "";
     @Bind(R.id.address_text)
     TextView mAddressTV;
 
@@ -123,12 +129,15 @@ public class RegisterActivity extends BaseActivity {
                 switch (checkedId) {
                     case R.id.teacher:
                         role = "T";
+                        mInvitaionLL.setVisibility(View.VISIBLE);
                         break;
                     case R.id.student:
                         role = "S";
+                        mInvitaionLL.setVisibility(View.GONE);
                         break;
                     case R.id.parent:
                         role = "J";
+                        mInvitaionLL.setVisibility(View.GONE);
                         break;
                 }
             }
@@ -140,6 +149,7 @@ public class RegisterActivity extends BaseActivity {
         pass = mPassEdit.getText().toString();
         mRealname = mRealnameEdit.getText().toString();
         comfirmPass = mConfirmPasswordEdit.getText().toString();
+        mInvitaionCode = mInvitationCodeEdit.getText().toString();
         if (TextUtils.isEmpty(phone)) {
             showToast(getString(R.string.toast_phone_notnull));
             return;
@@ -163,6 +173,13 @@ public class RegisterActivity extends BaseActivity {
         if (!comfirmPass.equals(pass)) {
             showToast(getString(R.string.toast_pass_notseem));
             return;
+        }
+        if (role.equals("T")) {
+            if (TextUtils.isEmpty(mInvitaionCode)) {
+                showToast("请输入邀请码");
+                return;
+            }
+
         }
         if (TextUtils.isEmpty(provinceS) && TextUtils.isEmpty(cityS)) {
             showToast("请选择地区");
@@ -200,6 +217,7 @@ public class RegisterActivity extends BaseActivity {
         request.add("realname", mRealname);
         request.add("province", provinceS);
         request.add("city", cityS);
+        request.add("invitationCode", mInvitaionCode);
 
         mQueue.add(Constant.REQUEST_WHAT, request, new OnResponseListener<JSONObject>() {
             @Override

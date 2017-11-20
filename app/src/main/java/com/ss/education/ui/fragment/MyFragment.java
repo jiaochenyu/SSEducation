@@ -1,5 +1,7 @@
 package com.ss.education.ui.fragment;
 
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -18,8 +20,8 @@ import com.ss.education.base.BaseFragment;
 import com.ss.education.base.ConnectUrl;
 import com.ss.education.base.Constant;
 import com.ss.education.base.MyApplication;
-import com.ss.education.entity.Classes;
 import com.ss.education.entity.EventFlag;
+import com.ss.education.listener.DialogListener;
 import com.ss.education.ui.activity.examination.ExamErrorSectionListActivity;
 import com.ss.education.ui.activity.examination.ExamRecordActivity;
 import com.ss.education.ui.activity.my.UserInfoActivity;
@@ -28,6 +30,7 @@ import com.ss.education.ui.activity.parent.MyParentActivity;
 import com.ss.education.ui.activity.photo.BigPhotoActivity;
 import com.ss.education.ui.activity.teacher.StudentsListActivity;
 import com.ss.education.utils.ImageUtils;
+import com.ss.education.weight.CommentDialog;
 import com.yanzhenjie.nohttp.NoHttp;
 import com.yanzhenjie.nohttp.RequestMethod;
 import com.yanzhenjie.nohttp.rest.OnResponseListener;
@@ -36,7 +39,6 @@ import com.yanzhenjie.nohttp.rest.RequestQueue;
 import com.yanzhenjie.nohttp.rest.Response;
 
 import org.greenrobot.eventbus.Subscribe;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -188,13 +190,13 @@ public class MyFragment extends BaseFragment {
                     JSONObject object = response.get();
                     Gson gson = new Gson();
                     try {
-                        sdfsdf
+                        Log.e("邀请码", object.toString());
                         String status = object.getString("status");
                         if (status.equals("100")) {
-                            JSONArray array = object.getJSONArray("array");
-                            for (int i = 0; i < array.length(); i++) {
-                                Classes c = gson.fromJson(array.getJSONObject(i).toString(), Classes.class);
-                            }
+                            String code = object.getString("invitationCode");
+                            String effectivetime = object.getString("effectivetime");
+                            String s = "" + effectivetime + "分钟有效！";
+                            showCode(code, s);
                         } else {
 
                         }
@@ -211,8 +213,25 @@ public class MyFragment extends BaseFragment {
 
             @Override
             public void onFinish(int what) {
+                hideLoading();
 
+            }
+        });
+    }
 
+    private void showCode(final String code, String time) {
+        CommentDialog.showInvitaionCodeDialog(getActivity(), code, time);
+        CommentDialog.setmDialogListener(new DialogListener() {
+            @Override
+            public void yesClickListener() {
+
+            }
+
+            @Override
+            public void noClickListener() {
+                ClipboardManager cm = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                cm.setText(code);
+                showToast("已经成功复制到粘贴板");
             }
         });
     }

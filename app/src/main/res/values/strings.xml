@@ -56,6 +56,7 @@
     <string name="my_teacher">我的老师</string>
     <string name="my_student">我的学生</string>
     <string name="confirm_hint_password">请确认密码</string>
+    <string name="invitation_code_edit">请输入邀请码</string>
     <string name="title_banji">班级</string>
     <string name="hint_classname">请输入班级名称</string>
     <string name="dialog_tishi">提示</string>

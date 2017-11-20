@@ -285,7 +285,39 @@
 
 
     </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/invitation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        >
 
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:src="@drawable/icon_password_gray"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/invitation_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="@string/invitation_code_edit"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/hintTextGray"
+            android:textColorHint="@color/hintTextGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/address_layout"

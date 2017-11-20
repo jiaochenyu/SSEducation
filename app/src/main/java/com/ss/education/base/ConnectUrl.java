@@ -12,14 +12,14 @@ public class ConnectUrl {
     public static String IMAGEURL_HEADER = "http://img0.imgtn.bdimg.com/it/u=3806841454,2251366770&fm=27&gp=0.jpg";
 
 
-//    public static String HTTPURL = "http://192.168.0.114:8080/appservice";  //本地
-//    public static String PICURL = "http://192.168.0.114:8080/appservice/"; // 本地 图片
-//    public static String FILE_PATH = "http://192.168.0.114:8080/appservice/"; // 本地 文件
+    public static String HTTPURL = "http://192.168.0.114:8080/appservice";  //本地
+    public static String PICURL = "http://192.168.0.114:8080/appservice/"; // 本地 图片
+    public static String FILE_PATH = "http://192.168.0.114:8080/appservice/"; // 本地 文件
 
 
-    public static String HTTPURL = "http://101.89.139.185:8082/appservice";  //服务器
-    public static String PICURL = "http://101.89.139.185:8082/appservice/"; //服务器
-    public static String FILE_PATH = "http://101.89.139.185:8082/appservice/"; // 服务器 文件
+//    public static String HTTPURL = "http://101.89.139.185:8082/appservice";  //服务器
+//    public static String PICURL = "http://101.89.139.185:8082/appservice/"; //服务器
+//    public static String FILE_PATH = "http://101.89.139.185:8082/appservice/"; // 服务器 文件
 
     public static String LOGIN = HTTPURL + "/user-checkUserAndPwd.cyc";
     public static String REGISTER = HTTPURL + "/app-toregister.cyc";
