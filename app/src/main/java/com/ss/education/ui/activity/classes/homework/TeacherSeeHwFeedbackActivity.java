@@ -49,6 +49,8 @@ import com.ss.education.utils.ImageUtils;
 import com.ss.education.utils.OfficeFileUtils;
 import com.ss.education.utils.voiceutils.AudioRecordButton;
 import com.ss.education.weight.MorePopupWindow;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.yanzhenjie.alertdialog.AlertDialog;
 import com.yanzhenjie.nohttp.FileBinary;
 import com.yanzhenjie.nohttp.Headers;
@@ -80,6 +82,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.Bind;
@@ -134,7 +137,7 @@ public class TeacherSeeHwFeedbackActivity extends BaseActivity {
     List<RecordModel> mVoices;
     //语音
     public VoiceListInDetail voiceListInDetail;
-    MediaPlayer mediaPlayer ;
+    MediaPlayer mediaPlayer;
     private ProgressDialog mProgressDialog;
     private ProgressDialog mUploadDialog;
     private Dialog mDialog; //录音
@@ -156,17 +159,25 @@ public class TeacherSeeHwFeedbackActivity extends BaseActivity {
             switch (msg.what) {
                 case 1:
 //                    showToast("文件保存到" + filePaths);
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
-                    int index = filePaths.lastIndexOf(".");
-                    String ex = filePaths.substring(index);
-                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
-                    if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                    } else {
-                        OfficeFileUtils.openFile(TeacherSeeHwFeedbackActivity.this, filePaths);
-                    }
+//                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
+//                    int index = filePaths.lastIndexOf(".");
+//                    String ex = filePaths.substring(index);
+//                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
+//                    if (intent.resolveActivity(getPackageManager()) != null) {
+//                        startActivity(intent);
+//                    } else {
+//                        OfficeFileUtils.openFile(TeacherSeeHwFeedbackActivity.this, filePaths);
+//                    }
+                    HashMap<String, String> params = new HashMap<>();
+//                    params.put("topBarBgColor", "#A0CBF0");
+                    QbSdk.openFileReader(TeacherSeeHwFeedbackActivity.this, filePaths, params, new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String s) {
+
+                        }
+                    });
 //                    openFile(filePaths);
                     mProgressDialog.dismiss();
                     break;
@@ -597,7 +608,7 @@ public class TeacherSeeHwFeedbackActivity extends BaseActivity {
         }
         for (int i = 0; i < mSubmitOfficeFiles.size(); i++) {
             if (mSubmitOfficeFiles.get(i).getPath().contains("upload/")) {
-                mServerFiles.add(new FileInfoBean(mSubmitOfficeFiles.get(i).getPath(),mSubmitOfficeFiles.get(i).getName()));
+                mServerFiles.add(new FileInfoBean(mSubmitOfficeFiles.get(i).getPath(), mSubmitOfficeFiles.get(i).getName()));
             } else {
                 fileBinaries.add(new FileBinary(new File(mSubmitOfficeFiles.get(i).getPath())));
             }

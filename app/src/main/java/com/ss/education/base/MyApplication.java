@@ -10,6 +10,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ss.education.entity.User;
 import com.ss.education.utils.SPUtils;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.TbsListener;
 import com.yanzhenjie.nohttp.InitializationConfig;
 import com.yanzhenjie.nohttp.Logger;
 import com.yanzhenjie.nohttp.NoHttp;
@@ -60,7 +62,40 @@ public class MyApplication extends Application {
         RongIM.getInstance().setMessageAttachedUserInfo(true);
 //        httpGetAllUser();
 //        RongIM.getInstance().registerConversationTemplate(new MyPrivateConversationProvider());
-    }
+
+
+        //腾讯浏览服务
+        // 搜集本地tbs内核信息并上报服务器，服务器返回结果决定使用哪个内核。
+        // TbsDownloader.needDownload(getApplicationContext(), false);
+        QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
+            @Override
+            public void onCoreInitFinished() {
+            }
+
+            @Override
+            public void onViewInitFinished(boolean b) {
+                Log.e("apptbs", " onViewInitFinished is " + b);
+            }
+        };
+        QbSdk.setTbsListener(new TbsListener() {
+            @Override
+            public void onDownloadFinish(int i) {
+                Log.d("apptbs", "onDownloadFinish");
+            }
+
+            @Override
+            public void onInstallFinish(int i) {
+                Log.d("apptbs", "onInstallFinish");
+            }
+
+            @Override
+            public void onDownloadProgress(int i) {
+                Log.d("apptbs", "onDownloadProgress:" + i);
+            }
+        });
+        QbSdk.initX5Environment(this,cb);
+
+    };
 
     public static MyApplication getInst() {
         return inst;

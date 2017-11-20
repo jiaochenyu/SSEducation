@@ -55,6 +55,8 @@ import com.ss.education.utils.voiceutils.AudioRecordButton;
 import com.ss.education.utils.voiceutils.MediaManager;
 import com.ss.education.utils.voiceutils.VoiceLineUtils;
 import com.ss.education.weight.MorePopupWindow;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.yanzhenjie.alertdialog.AlertDialog;
 import com.yanzhenjie.nohttp.FileBinary;
 import com.yanzhenjie.nohttp.NoHttp;
@@ -84,6 +86,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.Bind;
@@ -428,14 +431,24 @@ public class ReleaseHomeWorkActivity extends BaseActivity {
         mFileListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
-                intent.setDataAndType(Uri.fromFile(new File(mOfficeFiles.get(position).getPath())), mOfficeFiles.get(position).getExtension());
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
+//                intent.setDataAndType(Uri.fromFile(new File(mOfficeFiles.get(position).getPath())), mOfficeFiles.get(position).getExtension());
+//                if (intent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(intent);
+//                }
+                HashMap<String, String> params = new HashMap<>();
+//                    params.put("topBarBgColor", "#A0CBF0");
+                QbSdk.openFileReader(ReleaseHomeWorkActivity.this, mOfficeFiles.get(position).getPath(), params, new ValueCallback<String>() {
+                    @Override
+                    public void onReceiveValue(String s) {
+
+                    }
+                });
             }
+
+
         });
 
         mPicGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {

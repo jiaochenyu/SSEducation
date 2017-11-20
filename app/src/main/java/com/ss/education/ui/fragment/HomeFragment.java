@@ -2,7 +2,6 @@ package com.ss.education.ui.fragment;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -32,7 +31,8 @@ import com.ss.education.entity.HomePractice;
 import com.ss.education.entity.SimulationExam;
 import com.ss.education.ui.activity.examination.PracticeActivity;
 import com.ss.education.utils.NetworkImageHolderView;
-import com.ss.education.utils.OfficeFileUtils;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.yanzhenjie.nohttp.Headers;
 import com.yanzhenjie.nohttp.RequestMethod;
 import com.yanzhenjie.nohttp.download.DownloadRequest;
@@ -42,6 +42,7 @@ import com.zhy.adapter.abslistview.CommonAdapter;
 import com.zhy.adapter.abslistview.ViewHolder;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.Bind;
@@ -74,6 +75,7 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
     ExamAdapter mAdapter;
     private ProgressDialog mProgressDialog;
     private String filePaths = "";
+
     Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -81,9 +83,9 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
             switch (msg.what) {
                 case 1:
 //                    showToast("文件保存到" + filePaths);
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
+//                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+////                    officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
 //                    int index = filePaths.lastIndexOf(".");
 //                    String ex = filePaths.substring(index);
 //                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
@@ -92,7 +94,18 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
 //                    } else {
 //                        OfficeFileUtils.openFile(getActivity(), filePaths);
 //                    }
-                    OfficeFileUtils.openFile(getActivity(), filePaths);
+
+                    HashMap<String, String> params = new HashMap<>();
+//                    params.put("topBarBgColor", "#A0CBF0");
+                    QbSdk.openFileReader(getActivity(), filePaths, params, new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String s) {
+
+                        }
+                    });
+
+
+//                    OfficeFileUtils.openFile(getActivity(), filePaths);
                     mProgressDialog.dismiss();
                     break;
             }
@@ -340,6 +353,7 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
+
     }
 
 

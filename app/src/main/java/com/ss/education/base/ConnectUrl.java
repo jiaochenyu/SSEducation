@@ -85,4 +85,9 @@ public class ConnectUrl {
     public static String GET_HOME_WORK_FEEDBACK_STUDENT = HTTPURL + "/app-loadAppWorkFeedbackS.cyc";// 学生获取作业反馈
 
 
+    /**
+     * 我的模块
+     */
+    public static String INVITATION_TEACHER_CODE= HTTPURL + "/app-buildInvitationCode.cyc";// 老师生成教师邀请码
+
 }

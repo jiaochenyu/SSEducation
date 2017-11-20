@@ -53,6 +53,8 @@ import com.ss.education.utils.ImageUtils;
 import com.ss.education.utils.OfficeFileUtils;
 import com.ss.education.utils.voiceutils.AudioRecordButton;
 import com.ss.education.weight.MorePopupWindow;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.yanzhenjie.alertdialog.AlertDialog;
 import com.yanzhenjie.nohttp.FileBinary;
 import com.yanzhenjie.nohttp.Headers;
@@ -83,6 +85,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.Bind;
@@ -199,17 +202,25 @@ public class HomeWorkDetailActivity extends BaseActivity {
             switch (msg.what) {
                 case 1:
 //                    showToast("文件保存到" + filePaths);
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
-                    int index = filePaths.lastIndexOf(".");
-                    String ex = filePaths.substring(index);
-                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
-                    if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                    } else {
-                        openFile(filePaths);
-                    }
+//                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
+//                    int index = filePaths.lastIndexOf(".");
+//                    String ex = filePaths.substring(index);
+//                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
+//                    if (intent.resolveActivity(getPackageManager()) != null) {
+//                        startActivity(intent);
+//                    } else {
+//                        openFile(filePaths);
+//                    }
+                    HashMap<String, String> params = new HashMap<>();
+//                    params.put("topBarBgColor", "#A0CBF0");
+                    QbSdk.openFileReader(HomeWorkDetailActivity.this, filePaths, params, new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String s) {
+
+                        }
+                    });
                     mProgressDialog.dismiss();
                     break;
             }

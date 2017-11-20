@@ -319,6 +319,35 @@
             />
     </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/invitation_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/x10"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="生成邀请码"
+            android:textColor="@color/blackText"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="@dimen/x14"
+            android:layout_height="@dimen/x14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_go_right"
+            />
+    </RelativeLayout>
+
+
     <RelativeLayout
         android:id="@+id/sehzhi"
         android:layout_width="match_parent"
@@ -345,7 +374,6 @@
             android:src="@drawable/icon_go_right"
             />
     </RelativeLayout>
-
 
 
 </LinearLayout>

@@ -2,9 +2,7 @@ package com.ss.education.ui.activity.classes.homework;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -25,7 +23,8 @@ import com.ss.education.customview.NoScrollListView;
 import com.ss.education.entity.HomeworkFeedback;
 import com.ss.education.entity.LocationFile;
 import com.ss.education.entity.RecordModel;
-import com.ss.education.utils.OfficeFileUtils;
+import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.yanzhenjie.nohttp.Headers;
 import com.yanzhenjie.nohttp.RequestMethod;
 import com.yanzhenjie.nohttp.download.DownloadRequest;
@@ -34,9 +33,9 @@ import com.yanzhenjie.nohttp.download.SyncDownloadExecutor;
 import com.zhy.adapter.abslistview.CommonAdapter;
 import com.zhy.adapter.abslistview.ViewHolder;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.Bind;
@@ -80,18 +79,26 @@ public class TeacherEvaluateActivity extends BaseActivity {
             super.handleMessage(msg);
             switch (msg.what) {
                 case 1:
-//                    showToast("文件保存到" + filePaths);
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
-                    int index = filePaths.lastIndexOf(".");
-                    String ex = filePaths.substring(index);
-                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
-                    if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                    } else {
-                        OfficeFileUtils.openFile(TeacherEvaluateActivity.this, filePaths);
-                    }
+////                    showToast("文件保存到" + filePaths);
+//                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    //officeFile：本地文档；type：文档MIMEType类型，可以使用文件格式后缀
+//                    int index = filePaths.lastIndexOf(".");
+//                    String ex = filePaths.substring(index);
+//                    intent.setDataAndType(Uri.fromFile(new File(filePaths)), ex);
+//                    if (intent.resolveActivity(getPackageManager()) != null) {
+//                        startActivity(intent);
+//                    } else {
+//                        OfficeFileUtils.openFile(TeacherEvaluateActivity.this, filePaths);
+//                    }
+                    HashMap<String, String> params = new HashMap<>();
+//                    params.put("topBarBgColor", "#A0CBF0");
+                    QbSdk.openFileReader(TeacherEvaluateActivity.this, filePaths, params, new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String s) {
+
+                        }
+                    });
                     mProgressDialog.dismiss();
                     break;
             }
