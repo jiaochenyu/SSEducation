@@ -416,12 +416,12 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u270c.png"
     },
     {
-        "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_file_icon_picture.png",
-        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_file_icon_picture.png"
-    },
-    {
         "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_message_block.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_ic_message_block.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_file_icon_picture.png",
+        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_file_icon_picture.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f4a9.png",
@@ -488,12 +488,12 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_ad_list_file_checked.png"
     },
     {
-        "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ext_plugin_toggle_hover.png",
-        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_ext_plugin_toggle_hover.png"
-    },
-    {
         "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voip_audio_right_connected.png",
         "source": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_voip_audio_right_connected.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ext_plugin_toggle_hover.png",
+        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_ext_plugin_toggle_hover.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u263a.png",

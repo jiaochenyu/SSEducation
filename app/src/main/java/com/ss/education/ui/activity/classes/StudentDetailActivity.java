@@ -1,5 +1,6 @@
 package com.ss.education.ui.activity.classes;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 
 import com.ss.education.R;
 import com.ss.education.base.BaseActivity;
+import com.ss.education.base.ConnectUrl;
 import com.ss.education.base.Constant;
 import com.ss.education.base.MyApplication;
 import com.ss.education.entity.EventFlag;
@@ -23,6 +25,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.rong.imkit.RongIM;
+import io.rong.imlib.model.UserInfo;
 
 public class StudentDetailActivity extends BaseActivity {
 
@@ -118,11 +121,13 @@ public class StudentDetailActivity extends BaseActivity {
                 //联系学生
                 if (RongIM.getInstance() != null) {
                     RongIM.getInstance().startPrivateChat(StudentDetailActivity.this, mStudent.getUuid(), mStudent.getRealname());
+                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(mStudent.getUuid(), mStudent.getRealname(), Uri.parse(ConnectUrl.FILE_PATH+mStudent.getImgpath())));
                 }
                 break;
             case R.id.contact_j:
                 if (RongIM.getInstance() != null) {
                     RongIM.getInstance().startPrivateChat(StudentDetailActivity.this, mStudent.getParent().getUuid(), mStudent.getParent().getRealname());
+                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(mStudent.getParent().getUuid(), mStudent.getParent().getRealname(), Uri.parse(ConnectUrl.FILE_PATH+mStudent.getParent().getImgpath())));
                 }
                 //联系家长
                 break;

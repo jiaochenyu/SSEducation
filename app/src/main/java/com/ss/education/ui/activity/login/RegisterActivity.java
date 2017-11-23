@@ -388,7 +388,7 @@ public class RegisterActivity extends BaseActivity {
                     hideLoading();
 //                    showToast("融云连接成功");
                     User u = MyApplication.getUser();
-                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(ConnectUrl.IMAGEURL_HEADER)));
+                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(ConnectUrl.FILE_PATH + u.getImgpath())));
                     goAndFinish(MainActivity.class);
                 }
 

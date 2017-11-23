@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/dialog_content_view"
     android:layout_width="@dimen/x254"
-    android:layout_height="@dimen/y80"
+    android:layout_height="@dimen/y100"
     android:layout_centerInParent="false"
     android:background="@drawable/bg_textview_small_corner_white"
     >
@@ -24,7 +24,6 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="@dimen/x10"
         android:layout_marginRight="@dimen/x10"
-        android:layout_marginTop="@dimen/x10"
         android:text="123456"
         android:textColor="@color/yellowF47"
         android:textSize="22sp"
@@ -43,6 +42,7 @@
         />
 
     <LinearLayout
+        android:layout_marginBottom="@dimen/y8"
         android:id="@+id/bottom_button_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

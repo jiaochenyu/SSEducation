@@ -9,6 +9,7 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ss.education.entity.User;
+import com.ss.education.utils.MyPrivateConversationProvider;
 import com.ss.education.utils.SPUtils;
 import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.TbsListener;
@@ -35,7 +36,7 @@ import io.rong.imlib.model.UserInfo;
 /**
  * Created by jcy on 2017/6/12.
  */
-public class MyApplication extends Application {
+public class MyApplication extends Application implements RongIM.UserInfoProvider{
     private static User mUser;
     private static MyApplication inst;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
@@ -57,11 +58,17 @@ public class MyApplication extends Application {
         Logger.setTag("NoHttpSample");
         JPushInterface.init(this);
         JPushInterface.setDebugMode(true);
+        httpGetAllUser();
+
+
+        
         RongIM.init(this);
-        initRongyunUsers();
+//        initRongyunUsers();
+        RongIM.setUserInfoProvider(this,false);
+
+        RongIM.getInstance().registerConversationTemplate(new MyPrivateConversationProvider());
         RongIM.getInstance().setMessageAttachedUserInfo(true);
-//        httpGetAllUser();
-//        RongIM.getInstance().registerConversationTemplate(new MyPrivateConversationProvider());
+//
 
 
         //腾讯浏览服务
@@ -148,7 +155,6 @@ public class MyApplication extends Application {
                                 mUsers.add(user);
                             }
 
-
                         } else {
 
                         }
@@ -176,6 +182,7 @@ public class MyApplication extends Application {
             @Override
             public UserInfo getUserInfo(String userId) {
                 mUsers = httpGetAllUsersSync();
+                Log.e("融云的用户",mUsers.size()+"");
                 if (mUsers != null && mUsers.size() > 0) {
                     for (User u : mUsers) {
                         if (u.getUuid().equals(userId)) {
@@ -184,10 +191,11 @@ public class MyApplication extends Application {
                     }
                 }
                 return null;
-
             }
         }, false);
     }
+
+
 
     //同步请求
     private List<User> httpGetAllUsersSync() {
@@ -220,4 +228,24 @@ public class MyApplication extends Application {
     }
 
 
+    /**
+     * 融云
+     * @param
+     * @return
+     */
+    @Override
+    public UserInfo getUserInfo(String id) {
+        Log.e("融云的用户",mUsers.size()+"");
+        if (mUsers != null && mUsers.size() > 0) {
+            for (User u : mUsers) {
+                if (u.getUuid().equals(id)) {
+                    Log.e("融云的用户","匹配成功 云id"+id+"  ****"+ u.getRealname()+"*****" + u.getUuid());
+//                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(ConnectUrl.IMAGEURL_HEADER)));
+                    UserInfo ru = new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(u.getImgpath()));
+                    return ru;
+                }
+            }
+        }
+        return null;
+    }
 }

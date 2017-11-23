@@ -131,8 +131,8 @@ public class MyReceiver extends BroadcastReceiver {
                     b.putString("classid", classid);
                     b.putString("classbh", classbh);
                     Intent intent = new Intent(context, ClassDetailActivity.class);
-                    intent.putExtras(b);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtras(b);
                     context.startActivity(intent);
                 }
                 if (type.equals(Constant.STDENT_CLASS_LIEBIAO)) {  //班级列表
@@ -140,6 +140,7 @@ public class MyReceiver extends BroadcastReceiver {
                     bm.putInt("page", MainActivity.CLASS);
                     Intent intent = new Intent(context, MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtras(bm);
                     context.startActivity(intent);
                 }
                 if (type.equals(Constant.STUDENT_WORK_LIEBIAO)) {  //作业列表
@@ -148,6 +149,7 @@ public class MyReceiver extends BroadcastReceiver {
                     bm.putString("classid", classid);
                     Intent intent = new Intent(context, HomeWorkListActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtras(bm);
                     context.startActivity(intent);
                 }
                 if (type.equals(Constant.STDENT_CLASS_WORK_JIEXI)) {  //
@@ -158,6 +160,7 @@ public class MyReceiver extends BroadcastReceiver {
                     bm.putSerializable("homeDetail", workInfo);
                     Intent intent = new Intent(context, HomeWorkDetailActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtras(bm);
                     context.startActivity(intent);
                 }
 
@@ -203,7 +206,6 @@ public class MyReceiver extends BroadcastReceiver {
                 builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
                         BaseAppManager.getInstance().clear();
                         Intent intent = new Intent(context, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

@@ -28,6 +28,7 @@ import com.ss.education.ui.activity.my.UserInfoActivity;
 import com.ss.education.ui.activity.parent.MyChildActivity;
 import com.ss.education.ui.activity.parent.MyParentActivity;
 import com.ss.education.ui.activity.photo.BigPhotoActivity;
+import com.ss.education.ui.activity.setting.AboutUsActivity;
 import com.ss.education.ui.activity.teacher.StudentsListActivity;
 import com.ss.education.utils.ImageUtils;
 import com.ss.education.weight.CommentDialog;
@@ -133,7 +134,7 @@ public class MyFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.header_iv, R.id.userinfo_layout, R.id.search_layout, R.id.layout_error, R.id.layout_record, R.id.my_parent, R.id.my_child, R.id.invitation_code})
+    @OnClick({R.id.header_iv, R.id.userinfo_layout, R.id.search_layout, R.id.layout_error, R.id.layout_record, R.id.my_parent, R.id.my_child, R.id.invitation_code, R.id.about_us})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.header_iv:
@@ -167,6 +168,10 @@ public class MyFragment extends BaseFragment {
                 break;
             case R.id.invitation_code:
                 httpGetTCode();
+                break;
+
+            case R.id.about_us:
+                go(AboutUsActivity.class);
                 break;
         }
     }

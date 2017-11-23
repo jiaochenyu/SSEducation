@@ -56,6 +56,8 @@ dependencies {
     compile project(':IMKit')
     //    compile 'com.commit451:PhotoView:1.2.4'
     compile 'com.isseiaoki:simplecropview:1.0.13'
+    compile project(':WheelPicker')
+    compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
     compile 'com.isseiaoki:simplecropview:1.0.13'
     compile 'com.yongchun:com.yongchun.imageselector:1.1.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
@@ -73,9 +75,8 @@ dependencies {
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'me.codeboy.android:align-text-view:2.3.1'
     compile 'com.yanzhenjie:permission:1.1.2'
     compile 'com.just.agentweb:agentweb:2.0.1'
     testCompile 'junit:junit:4.12'
-    compile project(':WheelPicker')
-    compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
 }

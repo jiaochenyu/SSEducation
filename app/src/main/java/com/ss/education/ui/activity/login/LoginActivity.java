@@ -276,7 +276,7 @@ public class LoginActivity extends BaseActivity {
 
                     hideLoading();
                     User u = MyApplication.getUser();
-                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(ConnectUrl.IMAGEURL_HEADER)));
+                    RongIM.getInstance().refreshUserInfoCache(new UserInfo(u.getUuid(), u.getRealname(), Uri.parse(ConnectUrl.FILE_PATH + u.getImgpath())));
                     goAndFinish(MainActivity.class);
                 }
 
@@ -296,16 +296,5 @@ public class LoginActivity extends BaseActivity {
         }
     }
 
-    private void initRongyunUser() {
-        RongIM.setUserInfoProvider(new RongIM.UserInfoProvider() {
-            @Override
-            public UserInfo getUserInfo(String s) {
-                UserInfo userInfo = null;
-                if (s.equals(MyApplication.getUser().getUuid())) {
-                    userInfo = new UserInfo(MyApplication.getUser().getUuid(), MyApplication.getUser().getRealname(), Uri.parse(""));
-                }
-                return userInfo;
-            }
-        }, true);
-    }
+
 }

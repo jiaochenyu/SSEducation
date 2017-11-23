@@ -52,7 +52,7 @@ import io.rong.imkit.fragment.ConversationListFragment;
 import io.rong.imkit.manager.IUnReadMessageObserver;
 import io.rong.imlib.model.Conversation;
 
-public class MainActivity extends BaseActivity implements IUnReadMessageObserver {
+public class MainActivity extends BaseActivity implements IUnReadMessageObserver  {
 
     private static final int HOME = 1;
     public static final int CLASS = 2;
@@ -92,6 +92,8 @@ public class MainActivity extends BaseActivity implements IUnReadMessageObserver
         applyPower();
 
     }
+
+
 
     @Override
     protected void getBundleExtras(Bundle extras) {
@@ -352,6 +354,11 @@ public class MainActivity extends BaseActivity implements IUnReadMessageObserver
             return -1;
         }
     }
+
+
+
+
+
 
 
     @Override

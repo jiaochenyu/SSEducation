@@ -60,7 +60,8 @@
         <!-- android:label="启动页" -->
         <activity
             android:name=".ui.activity.StartActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -70,7 +71,8 @@
         <activity
             android:name=".MainActivity"
             android:label="首页"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
             <action android:name="android.intent.action.VIEW"/>
 
             <category android:name="android.intent.category.DEFAULT"/>
@@ -83,65 +85,86 @@
         <activity
             android:name=".ui.activity.login.LoginActivity"
             android:label="登录"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.login.RegisterActivity"
-            android:label="注册"/>
+            android:label="注册"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activity.login.ForgetPassActivity"
-            android:label="忘记密码"/>
+            android:label="忘记密码"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activity.examination.PracticeActivity"
             android:label="章节"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activity.examination.AnswerActivity"
             android:label="考试题目"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activity.photo.DragPhotoActivity"
             android:label="图片放大"
+            android:screenOrientation="portrait"
             android:theme="@style/translucent">
         </activity>
         <activity
             android:name=".ui.activity.examination.FinishExamActivity"
             android:label="考试结束"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.teacher.StudentsListActivity">
+        <activity
+            android:name=".ui.activity.teacher.StudentsListActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.examination.ExamRecordActivity"
-            android:label="做题记录">
+            android:label="做题记录"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.teacher.ExamSummaryActivity"
-            android:label="答题卡界面">
+            android:label="答题卡界面"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.examination.ExamErrorListActivity"
-            android:label="错题列表">
+            android:label="错题列表"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.examination.ExamErrorSectionListActivity"
-            android:label="我的错题">
+            android:label="我的错题"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.AddClassActivity">
+        <activity
+            android:name=".ui.activity.classes.AddClassActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.ClassDetailActivity">
+        <activity
+            android:name=".ui.activity.classes.ClassDetailActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.JoinClassActivity">
+        <activity
+            android:name=".ui.activity.classes.JoinClassActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.activity.classes.ClassShenheActivity"
-            android:label="老师审核学生加入班级">
+            android:label="老师审核学生加入班级"
+            android:screenOrientation="portrait">
         </activity>
         <!-- ****************华丽的分割线 极光推送****************************************** -->
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity
             android:name="cn.jpush.android.ui.PopWinActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/MyDialogStyle">
         </activity>
 
@@ -150,6 +173,7 @@
             android:name="cn.jpush.android.ui.PushActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="cn.jpush.android.ui.PushActivity"/>
@@ -249,16 +273,26 @@
             android:name="JPUSH_APPKEY"
             android:value="11f395f4b189a6cf8fe53fee"/> <!-- </>值来自开发者平台取得的AppKey -->
 
-        <activity android:name=".ui.activity.classes.EditClassActivity">
+        <activity
+            android:name=".ui.activity.classes.EditClassActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.my.UserInfoActivity">
+        <activity
+            android:name=".ui.activity.my.UserInfoActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.my.EditUserInfoActivity">
+        <activity
+            android:name=".ui.activity.my.EditUserInfoActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.my.ModifyPasswordActivity">
+        <activity
+            android:name=".ui.activity.my.ModifyPasswordActivity"
+            android:screenOrientation="portrait">
         </activity>
 
-        <service android:name=".ui.service.UpdateVersionService">
+        <service
+            android:name=".ui.service.UpdateVersionService"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="updateVersionService"/>
             </intent-filter>
@@ -279,13 +313,21 @@
                     android:scheme="rong"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.classes.StudentDetailActivity">
+        <activity
+            android:name=".ui.activity.classes.StudentDetailActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.parent.SearchParentAndStuActivity">
+        <activity
+            android:name=".ui.activity.parent.SearchParentAndStuActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.parent.MyParentActivity">
+        <activity
+            android:name=".ui.activity.parent.MyParentActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.parent.ShenheSPActivity">
+        <activity
+            android:name=".ui.activity.parent.ShenheSPActivity"
+            android:screenOrientation="portrait">
         </activity>
 
         <provider
@@ -298,24 +340,46 @@
                 android:resource="@xml/rc_file_path"/>
         </provider>
         <!-- ******************图片选择器************** -->
-        <activity android:name="com.yongchun.library.view.ImageSelectorActivity"/>
-        <activity android:name="com.yongchun.library.view.ImagePreviewActivity"/>
-        <activity android:name="com.yongchun.library.view.ImageCropActivity"/>
-        <activity android:name=".ui.activity.classes.TeacherClassDetailActivity">
+        <activity
+            android:name="com.yongchun.library.view.ImageSelectorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImageCropActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.classes.TeacherClassDetailActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.GroupManageActivity">
+        <activity
+            android:name=".ui.activity.classes.GroupManageActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.ReleaseHomeWorkActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.ReleaseHomeWorkActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.HomeWorkListActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.HomeWorkListActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.FindOfficeFileActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.FindOfficeFileActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.SelectReceiverActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.SelectReceiverActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.HomeWorkDetailActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.HomeWorkDetailActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.PreviewOfficeActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.PreviewOfficeActivity"
+            android:screenOrientation="portrait">
         </activity>
 
         <receiver android:name=".ui.receiver.WpsBroadCastReciver">
@@ -327,27 +391,47 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ui.activity.parent.MyChildActivity">
+        <activity
+            android:name=".ui.activity.parent.MyChildActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.photo.BigPhotoActivity">
+        <activity
+            android:name=".ui.activity.photo.BigPhotoActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.GroupListActivity">
+        <activity
+            android:name=".ui.activity.classes.GroupListActivity"
+            android:screenOrientation="portrait">
         </activity>
 
         <!-- <meta-data -->
         <!-- android:name="com.ss.education.utils.GlideConfiguration" -->
         <!-- android:value="GlideModule"/> -->
-        <activity android:name=".ui.activity.classes.homework.LookAnaysisActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.LookAnaysisActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.HomeworkCompletionActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.HomeworkCompletionActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.TeacherSeeHwFeedbackActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.TeacherSeeHwFeedbackActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.homework.TeacherEvaluateActivity">
+        <activity
+            android:name=".ui.activity.classes.homework.TeacherEvaluateActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.TeacherClassesShenheActivity">
+        <activity
+            android:name=".ui.activity.classes.TeacherClassesShenheActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.classes.StudentManageActivity">
+        <activity
+            android:name=".ui.activity.classes.StudentManageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.activity.setting.AboutUsActivity">
         </activity>
     </application>
 
