@@ -21,7 +21,7 @@ import org.greenrobot.eventbus.Subscribe;
 import java.io.Serializable;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.rong.imkit.RongIM;
@@ -29,26 +29,26 @@ import io.rong.imlib.model.UserInfo;
 
 public class StudentDetailActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.s_name)
+    @BindView(R.id.s_name)
     TextView mSnameTV;
-    @Bind(R.id.xuehao)
+    @BindView(R.id.xuehao)
     TextView mXuehao;
-    @Bind(R.id.student_phone)
+    @BindView(R.id.student_phone)
     TextView mStudentPhone;
-    @Bind(R.id.j_name)
+    @BindView(R.id.j_name)
     TextView mJName;
-    @Bind(R.id.j_phone)
+    @BindView(R.id.j_phone)
     TextView mJPhone;
-    @Bind(R.id.jiazhang_layout)
+    @BindView(R.id.jiazhang_layout)
     LinearLayout mJiazhangLayout;
 
     String studentId = "";
     Student mStudent;
-    @Bind(R.id.contact_j)
+    @BindView(R.id.contact_j)
     TextView mContactJ;
-    @Bind(R.id.fenzu)
+    @BindView(R.id.fenzu)
     TextView mFenzuTV;
     private List<StudentGroup> mGroupList;
     private String classId = "";

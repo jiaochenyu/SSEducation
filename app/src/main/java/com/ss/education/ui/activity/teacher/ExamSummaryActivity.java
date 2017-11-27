@@ -41,7 +41,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -51,31 +51,31 @@ import butterknife.OnClick;
 
 public class ExamSummaryActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.exam_name)
+    @BindView(R.id.exam_name)
     TextView mExamName;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mName;
-    @Bind(R.id.search)
+    @BindView(R.id.search)
     TextView msearchTV;
-    @Bind(R.id.add_pingyu)
+    @BindView(R.id.add_pingyu)
     TextView mAddPingyuTV;
-    @Bind(R.id.bottom_vline)
+    @BindView(R.id.bottom_vline)
     View mVline;
-    @Bind(R.id.right_exam)
+    @BindView(R.id.right_exam)
     TextView mRightExamTV;
-    @Bind(R.id.time)
+    @BindView(R.id.time)
     TextView mTimeTV;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     NoScrollGridView mGridview;
-    @Bind(R.id.pingyu)
+    @BindView(R.id.pingyu)
     EditText mPingyuEdit;
-    @Bind(R.id.pingyu_t)
+    @BindView(R.id.pingyu_t)
     TextView mPingyuTV;
-    @Bind(R.id.layout_pingyu)
+    @BindView(R.id.layout_pingyu)
     LinearLayout mPingyuLL;
     private List<Exam> mExamList;
     private RequestQueue mQueue = NoHttp.newRequestQueue();

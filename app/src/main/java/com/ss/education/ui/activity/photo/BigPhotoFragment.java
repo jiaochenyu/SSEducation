@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
 import com.ss.education.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import uk.co.senab.photoview.PhotoView;
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -22,7 +22,7 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class BigPhotoFragment extends Fragment {
     String path;
-    @Bind(R.id.photo_view)
+    @BindView(R.id.photo_view)
     PhotoView mPhotoView;
 
 
@@ -72,6 +72,6 @@ public class BigPhotoFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+
     }
 }

@@ -1,5 +1,6 @@
 package com.ss.education.ui.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -45,7 +46,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -54,17 +55,17 @@ import butterknife.ButterKnife;
  */
 
 public class HomeFragment extends BaseFragment implements OnItemClickListener, ViewPager.OnPageChangeListener {
-    @Bind(R.id.convenientBanner)
+    @BindView(R.id.convenientBanner)
     ConvenientBanner mBanner;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     NoScrollGridView mGridview;
-    @Bind(R.id.listview_exam)
+    @BindView(R.id.listview_exam)
     NoScrollListView mListview; // 真题模拟
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     CustomSwipeRefresh mLayoutSwipeRefresh;
-    @Bind(R.id.mokuai_txt)
+    @BindView(R.id.mokuai_txt)
     TextView mMokuaiTxt;
-    @Bind(R.id.gongneng_layout)
+    @BindView(R.id.gongneng_layout)
     LinearLayout mGongnengLaout;
     private View mView;
     private List mPictureList;
@@ -76,6 +77,7 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
     private ProgressDialog mProgressDialog;
     private String filePaths = "";
 
+    @SuppressLint("HandlerLeak")
     Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -352,7 +354,7 @@ public class HomeFragment extends BaseFragment implements OnItemClickListener, V
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+
 
     }
 

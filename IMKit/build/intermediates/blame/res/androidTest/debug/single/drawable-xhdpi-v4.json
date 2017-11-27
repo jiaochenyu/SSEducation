@@ -56,12 +56,12 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_checkbox_none.png"
     },
     {
-        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ad_list_file_unchecked.png",
-        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ad_list_file_unchecked.png"
-    },
-    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voide_message_unread.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_voide_message_unread.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ad_list_file_unchecked.png",
+        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ad_list_file_unchecked.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f484.png",
@@ -222,6 +222,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_img_camera.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_img_camera.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_complete_hover.png",
@@ -422,6 +426,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_origin_check_nor.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_origin_check_nor.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f3a4.png",
@@ -652,6 +660,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_voice_receive_play1.png"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_picsel_pictype_normal.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_picsel_pictype_normal.png"
     },
@@ -872,6 +884,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_yes_hover.png"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_icon_rt_message_right.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_icon_rt_message_right.png"
     },
@@ -932,6 +948,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ext_tab_add.png"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f3b5.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f3b5.png"
     },
@@ -972,12 +992,12 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_notice_loading.png"
     },
     {
-        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_send_voice_one.png",
-        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_send_voice_one.png"
-    },
-    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_cs_unresolved_hover.png",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_cs_unresolved_hover.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_send_voice_one.png",
+        "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_send_voice_one.png"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_file_icon_audio.png",

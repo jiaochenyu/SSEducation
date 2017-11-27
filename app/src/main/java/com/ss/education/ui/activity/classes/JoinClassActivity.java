@@ -26,27 +26,27 @@ import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class JoinClassActivity extends BaseActivity {
 
-    @Bind(R.id.edit_class_code)
+    @BindView(R.id.edit_class_code)
     EditText mEditClassCode;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mNameTV;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mCodeTV;
-    @Bind(R.id.num)
+    @BindView(R.id.num)
     TextView mStudentNumTV;
-    @Bind(R.id.shuoming)
+    @BindView(R.id.shuoming)
     TextView mTeacherNameTV;
-    @Bind(R.id.time)
+    @BindView(R.id.time)
     TextView mTimeTV;
-    @Bind(R.id.result_layout)
+    @BindView(R.id.result_layout)
     LinearLayout mResultLayout;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
     private Classes mClasses;

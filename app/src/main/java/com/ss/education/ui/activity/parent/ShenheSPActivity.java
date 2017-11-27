@@ -37,21 +37,21 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ShenheSPActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
 
     List<User> mList;

@@ -20,8 +20,16 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fr_public_service_inf.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_conversation_member.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_conversation_member.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_template_icon_group.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_cs_alert_human_evaluation.xml",
@@ -34,6 +42,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_conversation.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_conversation.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_dialog_popup_options.xml",
@@ -120,6 +132,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_picture_pager.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_icon_rt_location_marker.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_icon_rt_location_marker.xml"
     },
@@ -146,6 +162,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_dialog_popup_prompt_warning.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_dialog_popup_prompt_warning.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_template_custom_big.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_picsel_preview.xml",
@@ -180,6 +200,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_sub_menu_item.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_system_conversation.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_system_conversation.xml"
     },
@@ -204,8 +228,16 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_block.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_camera.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_camera.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_conversationlist.xml",
@@ -218,6 +250,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_pic_popup_window.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_pic_popup_window.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_picprev_activity.xml",
@@ -246,6 +282,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_multi_rich_content_message.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_multi_rich_content_message.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_plugin_location_activity.xml",
@@ -312,6 +352,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_emoji_pager.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_media_action.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_public_service_search.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fr_public_service_search.xml"
     },
@@ -332,6 +376,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_text_message.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ext_root_menu_item.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_root_menu_item.xml"
     },
@@ -342,6 +390,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_file_preview_content.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_file_preview_content.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_cs_leave_message.xml",
@@ -380,6 +432,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_file_manager.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ext_emoji_grid_view.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_emoji_grid_view.xml"
     },
@@ -398,6 +454,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ext_plugin_item.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ext_plugin_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\29051d7236b4f7c4f5b3e19dbaca3238\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_file_message.xml",

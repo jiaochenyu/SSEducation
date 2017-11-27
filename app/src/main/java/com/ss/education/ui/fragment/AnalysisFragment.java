@@ -15,7 +15,7 @@ import com.just.library.ChromeClientCallbackManager;
 import com.ss.education.R;
 import com.ss.education.base.BaseFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -24,12 +24,12 @@ import butterknife.ButterKnife;
  */
 
 public class AnalysisFragment extends BaseFragment {
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
     AgentWeb mAgentWeb;
-    @Bind(R.id.parentLL)
+    @BindView(R.id.parentLL)
     LinearLayout mParentLL;
 
 
@@ -148,6 +148,6 @@ public class AnalysisFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+
     }
 }

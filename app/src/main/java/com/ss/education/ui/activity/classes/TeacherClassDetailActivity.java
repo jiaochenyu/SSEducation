@@ -45,7 +45,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -53,32 +53,32 @@ import static com.ss.education.R.id.j_name;
 
 public class TeacherClassDetailActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mSettingTV;
-    @Bind(R.id.time)
+    @BindView(R.id.time)
     TextView mTimeTV;
-    @Bind(R.id.num)
+    @BindView(R.id.num)
     TextView mStudentNumTV;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mNameTV;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mCodeTV;
-    @Bind(R.id.shuoming)
+    @BindView(R.id.shuoming)
     TextView mShuomingTV;
-    @Bind(R.id.daishenhe_num)
+    @BindView(R.id.daishenhe_num)
     TextView mDaishenheNumTV;
-    @Bind(R.id.daishenhe)
+    @BindView(R.id.daishenhe)
     TextView mDaishenheTV;
-    @Bind(R.id.icon)
+    @BindView(R.id.icon)
     ImageView mClassIconIV;
 
-    @Bind(R.id.exapandablelistview)
+    @BindView(R.id.exapandablelistview)
     NoScrolExpandablelListView mExapandablelistview;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
     private PopupWindow mPopupWindow;
 

@@ -24,7 +24,7 @@ import com.zhy.adapter.abslistview.ViewHolder;
 import java.io.Serializable;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -37,9 +37,9 @@ public class HomeworkCompletionFragment extends BaseFragment {
     public static final String ARGS_PAGE = "args_page";
     public static final String ARGS_FLAG = "args_flag";
 
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
 
     private View mView;
@@ -173,6 +173,6 @@ public class HomeworkCompletionFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+
     }
 }

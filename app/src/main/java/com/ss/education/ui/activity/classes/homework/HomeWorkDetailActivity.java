@@ -88,7 +88,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -99,69 +99,69 @@ import static com.yongchun.library.view.ImageSelectorActivity.REQUEST_IMAGE;
 public class HomeWorkDetailActivity extends BaseActivity {
 
     private static final int IMAGE_ALBUM = 2;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mSettingTV;
-    @Bind(R.id.icon)
+    @BindView(R.id.icon)
     ImageView mIcon;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mNameTV;
-    @Bind(R.id.release_name)
+    @BindView(R.id.release_name)
     TextView mReleasePeoTV;
-    @Bind(R.id.time)
+    @BindView(R.id.time)
     TextView mTimeTV;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mContentTV;
-    @Bind(R.id.pic_listview)
+    @BindView(R.id.pic_listview)
     NestedListView mPicListview;
-    @Bind(R.id.voice_listview)
+    @BindView(R.id.voice_listview)
     NoScrollListView mVoiceListview;
-    @Bind(R.id.file_listview)
+    @BindView(R.id.file_listview)
     NoScrollListView mFileListview;
-    @Bind(R.id.scrollview)
+    @BindView(R.id.scrollview)
     ScrollView mScrollView;
 
     List<String> mPicList;
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.back_text)
+    @BindView(R.id.back_text)
     TextView mBackText;
-    @Bind(R.id.search_iv)
+    @BindView(R.id.search_iv)
     ImageView mSearchIv;
-    @Bind(R.id.message_num)
+    @BindView(R.id.message_num)
     TextView mMessageNum;
-    @Bind(R.id.message)
+    @BindView(R.id.message)
     RelativeLayout mMessage;
-    @Bind(R.id.close_iv)
+    @BindView(R.id.close_iv)
     ImageView mCloseIv;
-    @Bind(R.id.img_picbtn)
+    @BindView(R.id.img_picbtn)
     ImageView mImgPicbtn;
-    @Bind(R.id.img_voicebtn)
+    @BindView(R.id.img_voicebtn)
     ImageView mImgVoicebtn;
-    @Bind(R.id.img_filebtn)
+    @BindView(R.id.img_filebtn)
     ImageView mImgFilebtn;
-    @Bind(R.id.submit_time)
+    @BindView(R.id.submit_time)
     TextView mSubmitTimeTV;
-    @Bind(R.id.submit_promt_layout)
+    @BindView(R.id.submit_promt_layout)
     RelativeLayout mSubmitPromtLayout;
-    @Bind(R.id.submit_homework_layout)
+    @BindView(R.id.submit_homework_layout)
     LinearLayout mSubmitHomeworkLayout;
-    @Bind(R.id.analysis_layout)
+    @BindView(R.id.analysis_layout)
     RelativeLayout mAnalysisLayout;
-    @Bind(R.id.completion_layout_teacher)
+    @BindView(R.id.completion_layout_teacher)
     RelativeLayout mCompletionTeacherRL;
-    @Bind(R.id.submit_layout)
+    @BindView(R.id.submit_layout)
     RelativeLayout mSubmitLayout;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     NoScrollGridView mSubmitPhotoGridview;
-    @Bind(R.id.submit_voice_listview)
+    @BindView(R.id.submit_voice_listview)
     NoScrollListView mSubmitVoiceListview;
-    @Bind(R.id.submit_file_listview)
+    @BindView(R.id.submit_file_listview)
     NoScrollListView mSubmitFileListview;
-    @Bind(R.id.submit_homework_content_edit)
+    @BindView(R.id.submit_homework_content_edit)
     EditText mSubmitHomeworkContentET;
-    @Bind(R.id.teacher_evaluate_layout)
+    @BindView(R.id.teacher_evaluate_layout)
     RelativeLayout mTeacherEvaluateLL; // 学生查看 老师的评价
 
     private List<LocationFile> mOfficeFiles;

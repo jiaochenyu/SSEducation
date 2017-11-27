@@ -8,17 +8,17 @@ import android.widget.TextView;
 import com.ss.education.R;
 import com.ss.education.base.BaseActivity;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ForgetPassActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.password)
+    @BindView(R.id.password)
     EditText mPassword;
-    @Bind(R.id.password_second)
+    @BindView(R.id.password_second)
     EditText mPasswordSecond;
 
     @Override

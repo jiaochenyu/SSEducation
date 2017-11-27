@@ -47,7 +47,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -59,24 +59,24 @@ import butterknife.OnClick;
 public class MyFragment extends BaseFragment {
     //    public static final int RIGHT = 1;
     public static final int EXAM_ERROR = 0;//错题
-    @Bind(R.id.header_iv)
+    @BindView(R.id.header_iv)
     ImageView mHeaderIv;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mName;
-    @Bind(R.id.search_layout)
+    @BindView(R.id.search_layout)
     RelativeLayout mSearchLayout;
-    @Bind(R.id.my_teacher)
+    @BindView(R.id.my_teacher)
     RelativeLayout mMyTeacherLayout;
-    @Bind(R.id.my_parent)
+    @BindView(R.id.my_parent)
     RelativeLayout mMyParentLayout;
-    @Bind(R.id.my_child)
+    @BindView(R.id.my_child)
     RelativeLayout mChildLayout;
-    @Bind(R.id.invitation_code)
+    @BindView(R.id.invitation_code)
     RelativeLayout mInvitationCodeRL;
 
-    @Bind(R.id.layout_error)
+    @BindView(R.id.layout_error)
     LinearLayout mErrorLayout;
-    @Bind(R.id.layout_record)
+    @BindView(R.id.layout_record)
     LinearLayout mRecordLayout;
     private View mView;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
@@ -242,10 +242,13 @@ public class MyFragment extends BaseFragment {
     }
 
 
+
+
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+
     }
 
 }

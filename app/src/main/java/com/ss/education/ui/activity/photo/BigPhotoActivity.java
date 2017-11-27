@@ -12,12 +12,12 @@ import com.ss.education.customview.FixMultiViewPager;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class BigPhotoActivity extends FragmentActivity {
 
-    @Bind(R.id.viewpager)
+    @BindView(R.id.viewpager)
     FixMultiViewPager mViewpager;
     List<String> picStrings = new ArrayList<>();
     int position = 0;

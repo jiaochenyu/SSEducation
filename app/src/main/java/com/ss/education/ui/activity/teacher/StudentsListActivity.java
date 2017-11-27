@@ -41,24 +41,24 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class StudentsListActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.edit)
+    @BindView(R.id.edit)
     EditText mEditSearch;
-    @Bind(R.id.cha)
+    @BindView(R.id.cha)
     ImageView mChaIV;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
     RequestQueue mQueue = NoHttp.newRequestQueue();
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
     private String mSearchStr = "";
     List<Student> mSearchList;

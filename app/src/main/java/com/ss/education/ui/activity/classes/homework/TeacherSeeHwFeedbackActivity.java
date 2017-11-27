@@ -85,7 +85,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -95,31 +95,31 @@ import static com.yongchun.library.view.ImageSelectorActivity.REQUEST_IMAGE;
 
 public class TeacherSeeHwFeedbackActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mContentTV;
-    @Bind(R.id.voice_listview)
+    @BindView(R.id.voice_listview)
     NoScrollListView mVoiceListview;
-    @Bind(R.id.pic_listview)
+    @BindView(R.id.pic_listview)
     NoScrollListView mPicListview;
-    @Bind(R.id.file_listview)
+    @BindView(R.id.file_listview)
     NoScrollListView mFileListview;
-    @Bind(R.id.submit_layout)
+    @BindView(R.id.submit_layout)
     RelativeLayout mSubmitLayout;
-    @Bind(R.id.submit_homework_content_edit)
+    @BindView(R.id.submit_homework_content_edit)
     EditText mSubmitContentEdit;
-    @Bind(R.id.submit_photo_gridview)
+    @BindView(R.id.submit_photo_gridview)
     NoScrollGridView mSubmitPhotoGridview;
-    @Bind(R.id.submit_voice_listview)
+    @BindView(R.id.submit_voice_listview)
     NoScrollListView mSubmitVoiceListview;
-    @Bind(R.id.submit_file_listview)
+    @BindView(R.id.submit_file_listview)
     NoScrollListView mSubmitFileListview;
-    @Bind(R.id.submit_homework_layout)
+    @BindView(R.id.submit_homework_layout)
     LinearLayout mSubmitHomeworkLayout;
-    @Bind(R.id.scrollview)
+    @BindView(R.id.scrollview)
     ScrollView mScrollview;
 
 

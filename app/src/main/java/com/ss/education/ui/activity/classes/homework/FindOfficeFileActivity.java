@@ -32,18 +32,18 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class FindOfficeFileActivity extends BaseActivity {
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mFinishTV;
-    @Bind(R.id.expandlistview)
+    @BindView(R.id.expandlistview)
     ExpandableListView mExpandlistview;
 
     int limitCount = 5;

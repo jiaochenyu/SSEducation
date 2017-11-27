@@ -36,25 +36,25 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ExamErrorSectionListActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.expandtabTab)
+    @BindView(R.id.expandtabTab)
     ExpandTabView mExpandtabTab;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
-    @Bind(R.id.pop_bg_view)
+    @BindView(R.id.pop_bg_view)
     View v_bg;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
     PopViewList viewXueke;
 

@@ -32,18 +32,18 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class GroupManageActivity extends BaseActivity {
 
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mSaveTV;
-    @Bind(R.id.drag_list_view)
+    @BindView(R.id.drag_list_view)
     DragListView mDragListView;
     List<StudentGroup> mList;
     DragListAdapter mAdapter;

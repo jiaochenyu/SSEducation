@@ -28,29 +28,29 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MyParentActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.j_name)
+    @BindView(R.id.j_name)
     TextView mJName;
-    @Bind(R.id.j_phone)
+    @BindView(R.id.j_phone)
     TextView mJPhone;
-    @Bind(R.id.jiazhang_layout)
+    @BindView(R.id.jiazhang_layout)
     LinearLayout mJiazhangLayout;
-    @Bind(R.id.add_parent)
+    @BindView(R.id.add_parent)
     TextView mAddParent;
-    @Bind(R.id.message_num)
+    @BindView(R.id.message_num)
     TextView mMessageNumTV;
-    @Bind(R.id.message)
+    @BindView(R.id.message)
     RelativeLayout mMessageLayout;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
     User mUser;

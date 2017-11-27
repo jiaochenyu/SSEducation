@@ -89,7 +89,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -101,53 +101,53 @@ public class ReleaseHomeWorkActivity extends BaseActivity {
     private final static int ANALYSIS = 666;  //解析
     private final static int HOME_CONTENT = 777;
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mRightText;
-    @Bind(R.id.home_title_edit)
+    @BindView(R.id.home_title_edit)
     EditText mTitleEdit;
-    @Bind(R.id.home_content_edit)
+    @BindView(R.id.home_content_edit)
     EditText mContentEdit;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     NoScrollGridView mPicGridview;
-    @Bind(R.id.voice_listview)
+    @BindView(R.id.voice_listview)
     NoScrollListView mVoiceListview;
-    @Bind(R.id.file_listview)
+    @BindView(R.id.file_listview)
     NoScrollListView mFileListview;
-    @Bind(R.id.receiver)
+    @BindView(R.id.receiver)
     TextView mReceiverTV;
-    @Bind(R.id.switch_submit_homework)
+    @BindView(R.id.switch_submit_homework)
     Switch mSwitchSubmitHomework;
-    @Bind(R.id.hw_end_time)
+    @BindView(R.id.hw_end_time)
     TextView mHwEndTimeTV;
-    @Bind(R.id.end_time_layout)
+    @BindView(R.id.end_time_layout)
     RelativeLayout mEndTimeLayout;
-    @Bind(R.id.online_submit_layout)
+    @BindView(R.id.online_submit_layout)
     LinearLayout mOnlineSubmitLayout;
-    @Bind(R.id.switch_analysis)
+    @BindView(R.id.switch_analysis)
     Switch mSwitchAnalysis;
-    @Bind(R.id.analysis_gridview)
+    @BindView(R.id.analysis_gridview)
     NoScrollGridView mAnalysisGridview;
-    @Bind(R.id.analysis_voice_listview)
+    @BindView(R.id.analysis_voice_listview)
     NoScrollListView mAnalysisVoiceListview;
-    @Bind(R.id.analysis_file_listview)
+    @BindView(R.id.analysis_file_listview)
     NoScrollListView mAnalysisFileListview;
-    @Bind(R.id.analysis_img_picbtn)
+    @BindView(R.id.analysis_img_picbtn)
     ImageView mAnalysisImgPicbtn;
-    @Bind(R.id.analysis_img_voicebtn)
+    @BindView(R.id.analysis_img_voicebtn)
     ImageView mAnalysisImgVoicebtn;
-    @Bind(R.id.analysis_img_filebtn)
+    @BindView(R.id.analysis_img_filebtn)
     ImageView mAnalysisImgFilebtn;
-    @Bind(R.id.switch_show_analysis)
+    @BindView(R.id.switch_show_analysis)
     Switch mSwitchShowAnalysis;
-    @Bind(R.id.analysis_layout)
+    @BindView(R.id.analysis_layout)
     LinearLayout mAnalysisLayout;
-    @Bind(R.id.analysis_content_edit)
+    @BindView(R.id.analysis_content_edit)
     EditText mAnalysisET;
-    @Bind(R.id.receive_layout)
+    @BindView(R.id.receive_layout)
     RelativeLayout mReceiveLL;
 
 

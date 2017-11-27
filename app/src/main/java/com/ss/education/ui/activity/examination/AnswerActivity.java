@@ -46,44 +46,44 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.iwgang.countdownview.CountdownView;
 
 public class AnswerActivity extends BaseActivity {
 
-    @Bind(R.id.back_text)
+    @BindView(R.id.back_text)
     TextView mBackText;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.countdown)
+    @BindView(R.id.countdown)
     CountdownView mCountdown;
-    @Bind(R.id.answer_title)
+    @BindView(R.id.answer_title)
     TextView mAnswerTitle;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     NoScrollListView mListview;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     GridView mGridView;
-    @Bind(R.id.current_answer)
+    @BindView(R.id.current_answer)
     TextView mCurrentAnswer;
-    @Bind(R.id.next_answer)
+    @BindView(R.id.next_answer)
     TextView mNextAnswer;
-    @Bind(R.id.bottom_layout)
+    @BindView(R.id.bottom_layout)
     LinearLayout mBottomLayout;
-    @Bind(R.id.right_answer)
+    @BindView(R.id.right_answer)
     TextView mRightAnswerTV;
-    @Bind(R.id.analysis)
+    @BindView(R.id.analysis)
     TextView mAnalysisTV;
-    @Bind(R.id.jiexi_layout)
+    @BindView(R.id.jiexi_layout)
     LinearLayout mAnalysisLayout;
-    @Bind(R.id.big_title_tv)
+    @BindView(R.id.big_title_tv)
     TextView mBigTitleTV;
-    @Bind(R.id.all_layout)
+    @BindView(R.id.all_layout)
     LinearLayout mAllLayout;
-    @Bind(R.id.jiexi_tv)
+    @BindView(R.id.jiexi_tv)
     TextView mJiexiTV;
-    @Bind(R.id.pre_answer)
+    @BindView(R.id.pre_answer)
     Button mPreAnswerTV;
 
     private Long countTimes = 0L; //答题总时间

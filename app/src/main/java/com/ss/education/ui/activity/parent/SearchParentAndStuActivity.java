@@ -24,27 +24,27 @@ import com.yanzhenjie.nohttp.rest.Response;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SearchParentAndStuActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.edit_phone)
+    @BindView(R.id.edit_phone)
     EditText mEditPhone;
-    @Bind(R.id.submit_btn)
+    @BindView(R.id.submit_btn)
     TextView mSubmitBtn;
-    @Bind(R.id.text_name)
+    @BindView(R.id.text_name)
     TextView mTextName;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mNameTV;
-    @Bind(R.id.text_phone)
+    @BindView(R.id.text_phone)
     TextView mTextPhone;
-    @Bind(R.id.phone)
+    @BindView(R.id.phone)
     TextView mPhoneTV;
-    @Bind(R.id.result_layout)
+    @BindView(R.id.result_layout)
     LinearLayout mResultLayout;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
     User mUser;

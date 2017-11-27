@@ -38,23 +38,23 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ClassShenheActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mRightText;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
-    @Bind(R.id.layout_bottom)
+    @BindView(R.id.layout_bottom)
     LinearLayout mLayoutBottom;
     private List<Student> mList;
     private MyAdapter mAdapter;

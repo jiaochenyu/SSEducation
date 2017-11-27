@@ -35,7 +35,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -44,13 +44,13 @@ import butterknife.OnClick;
  */
 public class PracticeActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListView;
-    @Bind(R.id.practice_next)
+    @BindView(R.id.practice_next)
     Button mPracticeBtn;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
     private String title;
     private List<Section> mList;

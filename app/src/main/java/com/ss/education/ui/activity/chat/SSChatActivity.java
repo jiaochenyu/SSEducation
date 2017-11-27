@@ -7,13 +7,13 @@ import android.widget.TextView;
 
 import com.ss.education.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SSChatActivity extends FragmentActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
 
     @Override

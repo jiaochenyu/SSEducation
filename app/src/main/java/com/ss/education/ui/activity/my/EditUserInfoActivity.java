@@ -27,25 +27,25 @@ import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class EditUserInfoActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mRightText;
-    @Bind(R.id.name_edit)
+    @BindView(R.id.name_edit)
     EditText mNameEdit;
-    @Bind(R.id.email_edit)
+    @BindView(R.id.email_edit)
     EditText mEmailEdit;
-    @Bind(R.id.phone_edit)
+    @BindView(R.id.phone_edit)
     EditText mPhoneEdit;
-    @Bind(R.id.school_tv)
+    @BindView(R.id.school_tv)
     TextView mSchoolTV;
 
     String name = "";

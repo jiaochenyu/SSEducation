@@ -45,7 +45,7 @@ import org.json.JSONObject;
 import java.util.HashSet;
 import java.util.Set;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.rong.imkit.RongContext;
 import io.rong.imkit.fragment.ConversationListFragment;
@@ -59,9 +59,9 @@ public class MainActivity extends BaseActivity implements IUnReadMessageObserver
     private static final int MESSAGE = 3;
     private static final int MY = 4;
     private static final int ANALYSIS = 5;//分析
-    @Bind(R.id.fragment)
+    @BindView(R.id.fragment)
     FrameLayout mFragment;
-    @Bind(R.id.navigation)
+    @BindView(R.id.navigation)
     BottomNavigationView mNavigation;
     private FragmentManager fragmentManager;
     private HomeFragment homeFragment;
@@ -115,7 +115,6 @@ public class MainActivity extends BaseActivity implements IUnReadMessageObserver
 
     private void initView() {
         BottomNavigationViewHelper.disableShiftMode(mNavigation);
-
     }
 
     private void initData() {

@@ -25,7 +25,7 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -34,13 +34,13 @@ import static com.ss.education.R.id.j_name;
 public class SelectReceiverActivity extends BaseActivity {
 
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mFinishTV;
-    @Bind(R.id.exapandablelistview)
+    @BindView(R.id.exapandablelistview)
     NoScrolExpandablelListView mExapandablelistview;
     MyExpandableListViewAdapter mAdapter;
     List<StudentGroup> mGroupList;

@@ -32,7 +32,7 @@ import com.yanzhenjie.nohttp.rest.Response;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.rong.imkit.RongIM;
@@ -41,12 +41,13 @@ import io.rong.imlib.model.UserInfo;
 
 public class LoginActivity extends BaseActivity {
 
-    @Bind(R.id.username)
+    @BindView(R.id.username)
     EditText mUsernameET;
-    @Bind(R.id.password)
+    @BindView(R.id.password)
     EditText mPasswordET;
-    @Bind(R.id.cha)
+    @BindView(R.id.cha)
     ImageView mChaIV;
+
     private String username;
     private String password;
 

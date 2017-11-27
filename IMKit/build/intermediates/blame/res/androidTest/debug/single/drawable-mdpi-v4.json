@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    }
+]

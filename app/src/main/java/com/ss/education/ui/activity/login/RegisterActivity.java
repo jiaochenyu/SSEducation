@@ -38,7 +38,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.qqtheme.framework.picker.AddressPicker2;
@@ -49,26 +49,26 @@ import io.rong.imlib.model.UserInfo;
 
 public class RegisterActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.phone)
+    @BindView(R.id.phone)
     EditText mPhoneET;
-    @Bind(R.id.code_edit)
+    @BindView(R.id.code_edit)
     EditText mCodeET;
-    @Bind(R.id.btn_yanzheng)
+    @BindView(R.id.btn_yanzheng)
     TextView mYanzhengTV;
-    @Bind(R.id.password_edit)
+    @BindView(R.id.password_edit)
     EditText mPassEdit;
-    @Bind(R.id.radiogroup)
+    @BindView(R.id.radiogroup)
     RadioGroup mRadiogroup;
     String role = "S";
-    @Bind(R.id.confirm_password_edit)
+    @BindView(R.id.confirm_password_edit)
     EditText mConfirmPasswordEdit;
-    @Bind(R.id.realname_edit)
+    @BindView(R.id.realname_edit)
     EditText mRealnameEdit;
-    @Bind(R.id.invitation_code_edit)
+    @BindView(R.id.invitation_code_edit)
     EditText mInvitationCodeEdit;
-    @Bind(R.id.invitation_ll)
+    @BindView(R.id.invitation_ll)
     LinearLayout mInvitaionLL;
 
     String code = "";
@@ -77,7 +77,7 @@ public class RegisterActivity extends BaseActivity {
     String comfirmPass = "";
     String mRealname = "";
     String mInvitaionCode = "";
-    @Bind(R.id.address_text)
+    @BindView(R.id.address_text)
     TextView mAddressTV;
 
 

@@ -29,7 +29,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -42,25 +42,25 @@ import static com.ss.education.R.id.chart;
  */
 public class FinishExamActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.back_text)
+    @BindView(R.id.back_text)
     TextView mBackText;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.score)
+    @BindView(R.id.score)
     TextView mScoreTV;
-    @Bind(R.id.error_count)
+    @BindView(R.id.error_count)
     TextView mErrorCountTV;
-    @Bind(R.id.use_time)
+    @BindView(R.id.use_time)
     TextView mUseTimeTV;
-    @Bind(R.id.share_btn)
+    @BindView(R.id.share_btn)
     Button mShareBtn;
-    @Bind(R.id.continue_btn)
+    @BindView(R.id.continue_btn)
     Button mContinueBtn;
-    @Bind(R.id.gridview)
+    @BindView(R.id.gridview)
     GridView mGridView;
-    @Bind(chart)
+    @BindView(chart)
     PieChart mChart;
     PieData mPieData;
 

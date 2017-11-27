@@ -4,6 +4,10 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable\\notification_bg.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
     },
@@ -204,8 +208,16 @@
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ac_btn_file_download_open_button.xml"
     },
     {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_cs_leave_message_btn.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_cs_leave_message_btn.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_notification_connecting_animated.xml",
@@ -218,6 +230,10 @@
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone_selector.xml",
         "source": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone_selector.xml"
+    },
+    {
+        "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\JCY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\cbfd4ae37e2812e9ba2b4ee38e4e80c6\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "F:\\AndroidProject\\SSEducation\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_cs_group_ok_text_selector.xml",

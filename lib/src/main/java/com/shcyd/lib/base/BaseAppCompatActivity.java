@@ -314,7 +314,6 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        ButterKnife.unbind(this);
         if (isBindEventBusHere()) {
             EventBus.getDefault().unregister(this);
         }

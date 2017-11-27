@@ -45,50 +45,50 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.rong.imkit.RongIM;
 
 public class ClassDetailActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mRightText;
-    @Bind(R.id.icon)
+    @BindView(R.id.icon)
     ImageView mIcon;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mNameTV;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mCodeTV;
-    @Bind(R.id.shuoming)
+    @BindView(R.id.shuoming)
     TextView mShuomingTV;
-    @Bind(R.id.time)
+    @BindView(R.id.time)
     TextView mTimeTV;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     NoScrollListView mListview;
-    @Bind(R.id.null_bg)
+    @BindView(R.id.null_bg)
     RelativeLayout mNullBg;
-    @Bind(R.id.layout_swipe_refresh)
+    @BindView(R.id.layout_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
-    @Bind(R.id.num)
+    @BindView(R.id.num)
     TextView mStudentNumTV;
-    @Bind(R.id.daishenhe_num)
+    @BindView(R.id.daishenhe_num)
     TextView mDaishenheNumTV;
-    @Bind(R.id.daishenhe)
+    @BindView(R.id.daishenhe)
     TextView mDaishenheTV;
-    @Bind(R.id.edit_detail)
+    @BindView(R.id.edit_detail)
     RelativeLayout mEditDetailLayout;
-    @Bind(R.id.layout_bottom)
+    @BindView(R.id.layout_bottom)
     LinearLayout mLayoutBottom;
-    @Bind(R.id.deleteOrSignout)
+    @BindView(R.id.deleteOrSignout)
     TextView mdeleteOroutTV; //学生退出班级/ 老师删除学生
-    @Bind(R.id.contact_t)
+    @BindView(R.id.contact_t)
     TextView mContactTV; //联系老师
-    @Bind(R.id.gongneng_layout)
+    @BindView(R.id.gongneng_layout)
     LinearLayout mGongnengLL; //
     private List<Student> mList;
     private MyAdapter mAdapter;

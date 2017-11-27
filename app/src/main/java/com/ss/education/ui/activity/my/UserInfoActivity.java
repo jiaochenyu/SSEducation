@@ -40,7 +40,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.rong.imkit.RongIM;
@@ -54,21 +54,21 @@ import static com.yongchun.library.view.ImageSelectorActivity.REQUEST_IMAGE;
 
 public class UserInfoActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.right_text)
+    @BindView(R.id.right_text)
     TextView mRightText;
-    @Bind(R.id.name_edit)
+    @BindView(R.id.name_edit)
     TextView mNameEdit;
-    @Bind(R.id.email_edit)
+    @BindView(R.id.email_edit)
     TextView mEmailEdit;
-    @Bind(R.id.phone_edit)
+    @BindView(R.id.phone_edit)
     TextView mPhoneEdit;
-    @Bind(R.id.school_tv)
+    @BindView(R.id.school_tv)
     TextView mSchoolTV;
-    @Bind(R.id.header_image)
+    @BindView(R.id.header_image)
     ImageView mHeaderIV;
     private String imgPath = ""; // 选择图片
     private RequestQueue mQueue = NoHttp.newRequestQueue();

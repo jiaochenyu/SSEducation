@@ -35,17 +35,17 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class GroupListActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListview;
     List<StudentGroup> mGroupList = new ArrayList<>();
     String belongGroupId = ""; // 用户所在分组

@@ -11,17 +11,17 @@ import com.ss.education.R;
 import com.ss.education.base.BaseActivity;
 import com.ss.education.base.ConnectUrl;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class PreviewOfficeActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.webview)
+    @BindView(R.id.webview)
     WebView urlWebView;
     String path = "";
 

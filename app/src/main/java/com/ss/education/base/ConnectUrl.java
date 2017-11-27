@@ -88,6 +88,7 @@ public class ConnectUrl {
     /**
      * 我的模块
      */
-    public static String INVITATION_TEACHER_CODE= HTTPURL + "/app-buildInvitationCode.cyc";// 老师生成教师邀请码
+    public static String INVITATION_TEACHER_CODE = HTTPURL + "/app-buildInvitationCode.cyc";// 老师生成教师邀请码
 
+    public static String PAY_ALIPAY = HTTPURL + "/pay-aliPay.cyc";
 }

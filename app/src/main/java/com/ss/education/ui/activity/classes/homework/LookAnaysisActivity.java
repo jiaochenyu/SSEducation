@@ -42,25 +42,25 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class LookAnaysisActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.content)
+    @BindView(R.id.content)
     TextView mContent;
-    @Bind(R.id.voice_listview)
+    @BindView(R.id.voice_listview)
     NoScrollListView mVoiceListview;
-    @Bind(R.id.pic_listview)
+    @BindView(R.id.pic_listview)
     NoScrollListView mPicListview;
-    @Bind(R.id.file_listview)
+    @BindView(R.id.file_listview)
     NoScrollListView mFileListview;
-    @Bind(R.id.scrollview)
+    @BindView(R.id.scrollview)
     ScrollView mScrollview;
     HomeWorkInfo mHomeWorkInfo;
     List<LocationFile> mOfficeFiles;

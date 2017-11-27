@@ -39,7 +39,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -52,17 +52,17 @@ import static com.yongchun.library.view.ImageSelectorActivity.REQUEST_IMAGE;
 
 public class AddClassActivity extends BaseActivity {
 
-    @Bind(R.id.back)
+    @BindView(R.id.back)
     ImageView mBack;
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView mTitle;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     EditText mNameET;
-    @Bind(R.id.beizhu)
+    @BindView(R.id.beizhu)
     EditText mBeizhuET;
-    @Bind(R.id.class_pic)
+    @BindView(R.id.class_pic)
     ImageView mClassPic;
-    @Bind(R.id.image_layout)
+    @BindView(R.id.image_layout)
     LinearLayout mImgLayout;
     private RequestQueue mQueue = NoHttp.newRequestQueue();
 

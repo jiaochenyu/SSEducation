@@ -42,7 +42,19 @@
             android:gravity="center"
             android:text="@string/about_us_copyright"
             android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@color/colorTopic"
+            android:text="@string/dadian"
+            android:textSize="14sp"/>
     </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>
